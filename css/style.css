@@ -1072,7 +1072,7 @@ ul.top_icon li a {
 }
 
 
-}
+
 .main-menu ul li:last-child a {
      padding-right: 0;
 }
@@ -1146,7 +1146,7 @@ ul.top_icon li a {
      display: inline-block;
      vertical-align: middle;
 }
-.main-menu ul>li:nth-child (6) {
+.main-menu ul>li:nth-child(6) a {
      padding-right: 0px;
 }
 .nav>li {
@@ -1162,7 +1162,7 @@ ul.top_icon li a {
      right: 0;
      padding: 15px 0px;
 }
-.sub-full {}
+
 .simple-down {
      padding: 15px;
 }
@@ -1596,44 +1596,60 @@ width: 100%;
 
 .location_icon_bottum_tt ul li {
      display: inline-block;
-padding: 27px 30px;
-color: #121010;
-font-size: 15px;
-font-weight: 500;
+    /* reduced vertical space for a tighter header */
+    padding: 8px 16px;
+    color: #121010;
+    font-size: 15px;
+    font-weight: 500;
 }
 .location_icon_bottum_tt ul li img {padding-right: 10px;}
 
 
 
 .location_icon_bottum {
-   
-    position: relative;
-    z-index: 999;
-    background: #090501;
-    margin-left: 31px;
-    top: 0;
-    margin-bottom: -43px;
-
+     position: relative;
+     z-index: 999;
+     background: #090501;
+     margin-left: 31px;
+     top: 0;
+     /* remove the large negative gap and tighten vertical padding */
+     margin-bottom: 0;
+     padding: 6px 12px;
+     display: flex;
+     align-items: center;
+     border-radius: 0;
+     -webkit-box-shadow: none;
+     box-shadow: none;
      }
 .location_icon_bottum::before {
      position: absolute;
 content: "";
 top: 0px;
-background: url(../icon/wfe4.png);
-background-repeat: repeat;
-width: 67px;
-height: 67px;
-background-repeat: no-repeat;
-left: -35px;
+/* smaller decorative sprite so it doesn't push header height */
+background: url(../icon/wfe4.png) no-repeat;
+width: 45px;
+height: 45px;
+left: -20px;
 }
 .location_icon_bottum ul li {
-     display: inline-block;
-padding: 0px 10px;
-color: #fff;
-font-size: 15px;
-font-weight: 500;
+      display: inline-block;
+     /* smaller inline padding to reduce header height */
+     padding: 0px 8px;
+     color: #fff;
+     font-size: 15px;
+     font-weight: 500;
 }
-.location_icon_bottum ul li img {padding-right: 10px;}
+.location_icon_bottum ul li img {padding-right: 8px;}
+
+/* make sure inner contents are vertically centered */
+.location_icon_bottum_tt,
+.location_icon_bottum {
+     align-items: center;
+}
+
+/* play badge tweaks */
+.header-badge { display: inline-flex; align-items: center; margin-left: 12px; }
+.header-badge img.play-badge { display: block; max-height: 44px; height: auto; }
 
 /** banner **/
 
@@ -2030,8 +2046,7 @@ right: 0px;
 bottom: -61px;;
 z-index: 9999;
 }
-.testomonial_img i img { border: #4bc714 solid 13px; width: 100%;}
-transform: skew(190deg);
+.testomonial_img i img { border: #4bc714 solid 13px; width: 100%; transform: skew(190deg); }
 
 .testimonial_cont h3 { color: #000; font-family: poppins;}
 
@@ -2302,3 +2317,103 @@ border-radius: 10px;
 .special-page .relative  {text-align:center !important; }
 
 .special-page .footer {margin-top: 90px;}
+
+/* Play Store badge responsive styling */
+.play-badge {
+     max-width: 150px;
+     height: auto;
+     display: inline-block;
+     vertical-align: middle;
+}
+
+@media (max-width: 576px) {
+     .play-badge {
+          max-width: 120px;
+     }
+}
+
+@media (max-width: 400px) {
+     .play-badge {
+          max-width: 100px;
+     }
+}
+
+/* Make play badge fully responsive */
+.play-badge {
+     display: inline-block;
+     width: auto;
+     max-width: 100%; /* allow badge to shrink with its container */
+     height: auto;
+}
+
+/* Header and offer specific constraints */
+.location_icon_bottum_tt .play-badge {
+     max-width: 150px;
+}
+.offer .play-badge {
+     max-width: 180px;
+}
+
+/* Ensure black bar (location_icon_bottum) spans full viewport width */
+.location_icon_bottum {
+     /* make the black bar extend edge-to-edge (bleed) across viewport */
+          width: 100vw !important;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+     box-sizing: border-box;
+     padding-left: 15px;
+     padding-right: 15px;
+     background: #090501;
+     z-index: 999;
+     margin-bottom: 0; /* remove negative overlap for consistent layout */
+}
+
+/* Small-screen adjustments to keep badge visible and menu full-width */
+@media (max-width: 576px) {
+     .location_icon_bottum {
+          padding-left: 10px;
+          padding-right: 10px;
+     }
+     .location_icon_bottum_tt ul {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+     }
+     .location_icon_bottum_tt ul li {
+          display: inline-block;
+          padding: 8px 6px;
+          vertical-align: middle;
+     }
+     /* push the badge to the right (use .header-badge now) */
+     .header-badge { margin-left: auto; }
+     .location_icon_bottum_tt .play-badge {
+          max-width: 120px;
+     }
+     .offer .play-badge {
+          max-width: 140px;
+     }
+
+     /* Make main menu items stack and take full width on very small phones */
+     .main-menu ul>li {
+          display: block;
+          width: 100%;
+     }
+     .main-menu ul>li a {
+          display: block;
+          width: 100%;
+          padding-left: 15px;
+          padding-right: 15px;
+     }
+}
+
+/* extra small screens: ensure badge aligns to right and remains visible */
+@media (max-width: 400px) {
+     .header-badge { margin-left: auto; }
+     .location_icon_bottum_tt .play-badge { max-width: 100px; }
+}
+/* Header layout helper: place badge in its own container */
+.location_icon_bottum_tt { display: flex; align-items: center; gap: 12px; }
+.location_icon_bottum_tt ul { display: flex; margin: 0; padding: 0; gap: 12px; list-style: none; }
+.header-badge { margin-left: auto; display: inline-block; }
+.header-badge .play-badge { display: block; }

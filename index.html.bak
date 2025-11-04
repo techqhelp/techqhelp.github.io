@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <link rel="icon" type="image/png" sizes="64x64" href="images/logo/1.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Myhal - India's No.1 Agriculture Classified and Marketplace</title>
+    <meta name="keywords" content="Agriculture,tractor,landscape,ornamental plants, agriculture Comodities,Khaad,fertilizers,Nutrients Farming, Marketplace, Classifieds, Farmers, Agricultural Products, AI Solutions">
+    <meta name="description" content="MYHAL is India's leading agriculture classfied and marketplace app connecting farmers, buyers, and suppliers for seamless trade and better profitability. Farmers can list their products for free, connect with buyers directly, and earn fair prices without any middlemen.">
+    <meta name="author" content="MyHAL">
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Myhal - India's No.1 Agriculture Classified and Marketplace">
+    <meta property="og:description" content="MYHAL is India's leading agriculture classfied and marketplace app connecting farmers, buyers, and suppliers for seamless trade and better profitability. Farmers can list their products for free, connect with buyers directly, and earn fair prices without any middlemen.">
+    <meta property="og:image" content="images/MyHAL.png">
+    <meta property="og:url" content="https://www.myhal.in">
+    <meta property="og:type" content="website">
+    <link rel="manifest" href="manifest.json">
+    <meta name="google-play-app" content="app-id=com.myhal.myhal">
+    <meta name="theme-color" content="#052501">
+        <!-- SEO additions -->
+        <link rel="canonical" href="https://www.myhal.in/">
+        <link rel="alternate" href="https://www.myhal.in/index.html" hreflang="en" />
+        <link rel="alternate" href="https://www.myhal.in/hi/index.html" hreflang="hi" />
+        <meta name="robots" content="index, follow">
+        <!-- Organization structured data -->
+        <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"MyHAL",
+            "url":"https://www.myhal.in",
+            "logo":"https://www.myhal.in/images/MyHAL.png",
+            "sameAs":["https://www.facebook.com/","https://twitter.com/"]
+        }
+        </script>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- redesign additions -->
+    <link rel="stylesheet" href="css/redesign.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout ">
+        <!-- Language suggestion banner (hidden by default) -->
+        <div id="langBanner" role="region" aria-live="polite">
+            <span id="langBannerText">Prefer reading this site in हिंदी?</span>
+            <a id="langBannerSwitch" class="btn btn-sm btn-success" href="hi/index.html">Switch to हिन्दी</a>
+            <button id="langBannerClose" class="btn btn-sm btn-link">Dismiss</button>
+        </div>
+    <!-- end loader -->
+        <!-- header: modern navbar with language selector -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/MyHAL.png" alt="MyHAL">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#product">Products</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonial</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                            <div class="text-white mr-3 d-none d-md-block">
+                                <small>hello@myhal.in</small><br/>
+                                <small>(+91)8376 883 780</small>
+                            </div>
+                            <div class="header-badge">
+                                <a href="https://play.google.com/store/apps/details?id=com.myhal.myhal" target="_blank" rel="noopener noreferrer" aria-label="Download MYHAL on Google Play" title="Download MYHAL on Google Play">
+                                    <img class="play-badge" src="images/gplay.png" alt="Download MYHAL on Google Play">
+                                </a>
+                            </div>
+                            <div class="translate-wrap ml-3">
+                                <div id="google_translate_element"></div>
+                            </div>
+                                                        <!-- visible language switcher -->
+                                                        <div class="nav-language dropdown ml-2">
+                                                            <button class="btn btn-sm btn-outline-light dropdown-toggle" id="langDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🌐 Language</button>
+                                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+                                                                                                                                <a class="dropdown-item" href="index.html" hreflang="en">
+                                                                                                                                    <span class="flag-icon" aria-hidden="true">
+                                                                                                                                        <!-- simple EN badge SVG (stylized) -->
+                                                                                                                                        <svg viewBox="0 0 36 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="English flag">
+                                                                                                                                            <rect width="36" height="20" fill="#00247d" rx="2"/>
+                                                                                                                                            <path d="M0 0 L36 20 M36 0 L0 20" stroke="#fff" stroke-width="3"/>
+                                                                                                                                            <circle cx="26" cy="6" r="2" fill="#cf142b"/>
+                                                                                                                                        </svg>
+                                                                                                                                    </span>
+                                                                                                                                    English
+                                                                                                                                </a>
+                                                                                                                                <a class="dropdown-item" href="hi/index.html" hreflang="hi">
+                                                                                                                                    <span class="flag-icon" aria-hidden="true">
+                                                                                                                                        <!-- simple IN flag SVG (tricolour with wheel) -->
+                                                                                                                                        <svg viewBox="0 0 36 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Indian flag">
+                                                                                                                                            <rect width="36" height="20" fill="#f93"/>
+                                                                                                                                            <rect y="7" width="36" height="6" fill="#fff"/>
+                                                                                                                                            <rect y="13" width="36" height="7" fill="#138808"/>
+                                                                                                                                            <circle cx="18" cy="10" r="2" fill="#054187" />
+                                                                                                                                        </svg>
+                                                                                                                                    </span>
+                                                                                                                                    हिंदी
+                                                                                                                                </a>
+                                                            </div>
+                                                        </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Hero section: clear headline, main actions (Buy / Sell / Rent) and app artwork -->
+        <section class="hero">
+            <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                        <h1 class="headline">Buy, Sell & Rent Agricultural Goods — All in One Trusted Marketplace</h1>
+                        <p class="sub">Connect directly with farmers, buyers and suppliers. List items, find equipment for rent, or discover fresh produce near you — fast, secure and commission-friendly.</p>
+
+                        <div class="action-cards mt-4">
+                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="action-card text-center p-3">
+                                                        <div class="action-icon mb-2" aria-hidden="true">
+                                                            <!-- shopping cart SVG -->
+                                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM7.16 14l.84-2h7.45c.75 0 1.41-.41 1.75-1.03L21 4H6.21l-.94-2H1v2h2l3.6 9.59L6.25 17c-.14.25-.25.52-.25.82 0 1.1.9 2 2 2h10v-2H8.42c-.14 0-.25-.11-.25-.25l.03-.12L9.1 14h8.55c.75 0 1.41-.41 1.75-1.03L21 6H7.16z"/></svg>
+                                                        </div>
+                                                        <h5>Buy</h5>
+                                                        <p class="small text-muted">Browse produce, seeds, fertilizers and equipment from trusted sellers.</p>
+                                                        <a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.myhal.myhal" onclick="window.location='market://details?id=com.myhal.myhal'; setTimeout(function(){ window.location='https://play.google.com/store/apps/details?id=com.myhal.myhal'; },800); return false;">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="action-card text-center p-3">
+                                                        <div class="action-icon mb-2" aria-hidden="true">
+                                                            <!-- megaphone / announce SVG -->
+                                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 10v4h3l6 4V6L6 10H3zm13-6v12c1.66 0 3 1.34 3 3h2c0-2.76-2.24-5-5-5V4h-0z"/></svg>
+                                                        </div>
+                                                        <h5>Sell</h5>
+                                                        <p class="small text-muted">List your harvest or products easily and connect with buyers directly.</p>
+                                                        <a class="btn btn-sm btn-outline-primary" href="Agricultureclassified.html">List an Item</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="action-card text-center p-3">
+                                                        <div class="action-icon mb-2" aria-hidden="true">
+                                                            <!-- wrench / tools SVG -->
+                                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="currentColor" d="M22.7 19.3l-6.4-6.4c.4-1 .4-2.1 0-3.1L18 6l-4-4-3.8 3.8c-1 .4-2.1.4-3.1 0L2.7 7.3C1.8 8.2 1 9.6 1 11.2 1 15 4.4 18.4 8.2 18.4c1.6 0 3-0.8 3.9-1.7l4.6 4.6c.8.8 2.1.8 2.9 0l2.1-2.1c.8-0.8.8-2.1 0-2.9zM8.2 16.4c-2.4 0-4.3-1.9-4.3-4.3 0-1 .4-1.9 1-2.6l2.3 2.3c.2.2.5.3.8.3.3 0 .6-.1.8-.3l2.3 2.3c-.6.6-1.5 1-2.7 1z"/></svg>
+                                                        </div>
+                                                        <h5>Rent</h5>
+                                                        <p class="small text-muted">Find tractors, tools and equipment available for short-term rental.</p>
+                                                        <a class="btn btn-sm btn-secondary" href="Equipment.html">Find Rentals</a>
+                                                    </div>
+                                                </div>
+                            </div>
+                        </div>
+                                </div>
+                                <!-- right-side hero visual: mockup that matches left column height on lg+ -->
+                                <div class="col-lg-6 d-none d-lg-flex" style="display:flex !important; align-items:stretch;">
+                                    <div class="hero-visual">
+                                        <div class="visual-card">
+                                            <img src="images/mockup.png" alt="MYHAL promotional mockup">
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- about -->
+    <section id="about" class="about py-5">
+        <div class="about-card p-4 p-md-5 d-flex flex-wrap align-items-center shadow-sm rounded-lg w-100" style="background:linear-gradient(120deg,#f8fff8 80%,#eafbe7 100%);">
+            <div class="about-content px-2 px-md-4" style="flex:1; min-width:280px; max-width:600px;">
+                <h2 class="about-title mb-3">About <span class="text-success">MyHAL</span></h2>
+                <p class="about-lead mb-3">Myhal is Agriculture Classifieds & Rental Marketplace for farmers, equipment owners, and agri-businesses. Easily buy, sell, or rent farming products, tractors, machinery, seeds, livestock, and more – all in one app.</p>
+
+                <div class="about-features mb-4">
+                    <div class="mb-2" style="font-size:1.15rem; font-weight:600; color:#4bc714;">🌱 Key Features</div>
+                    <ul class="about-list list-unstyled">
+                        <li><span class="about-list-icon" aria-hidden="true">✔️</span> <b>Buy & Sell</b> – Farm machinery, tractors, tools, seeds, fertilizers, livestock</li>
+                        <li><span class="about-list-icon" aria-hidden="true">✔️</span> <b>Rent Easily</b> – Tractors, harvesters, farm equipment, land, and agri-services</li>
+                        <li><span class="about-list-icon" aria-hidden="true">✔️</span> <b>Post Free Ads</b> – Upload photos, set a price, and connect with buyers quickly</li>
+                        <li><span class="about-list-icon" aria-hidden="true">✔️</span> <b>Local Marketplace</b> – Find verified farmers and suppliers near you</li>
+                        <li><span class="about-list-icon" aria-hidden="true">✔️</span> <b>Multi-language Support</b> – Post ads in your local language for better reach</li>
+                    </ul>
+                </div>
+                <a class="btn btn-success about-btn px-4 py-2" href="#product">Explore Services</a>
+            </div>
+            <div class="about-image text-center mt-4 mt-md-0" style="flex:1; min-width:280px;">
+                <img src="images/about.png" alt="About MyHAL" class="img-fluid rounded-lg shadow about-img" style="max-height:340px; border:6px solid #eafbe7; background:#fff; object-fit:cover;">
+            </div>
+        </div>
+    </section>
+    <!-- end about -->
+    <!-- for_box -->
+    <div class="for_box_bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="for_box text-center">
+                        <i class="stat-icon" aria-hidden="true">
+                            <!-- App Download SVG icon -->
+                            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="54" height="54" rx="12" fill="#052501"/>
+                                <path d="M27 38V16M27 38l-7-7M27 38l7-7" stroke="#4bc714" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </i>
+                        <span style="color:#4bc714;font-size:2.2rem;font-weight:700;">10000+</span>
+                        <h3 style="color:#fff;font-size:1.5rem;">App Download</h3>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="for_box text-center">
+                        <i class="stat-icon" aria-hidden="true">
+                            <!-- Registered Farmers SVG icon -->
+                            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="54" height="54" rx="12" fill="#052501"/>
+                                <path d="M27 34c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z" stroke="#4bc714" stroke-width="3" fill="none"/>
+                                <path d="M19 38c0-4 8-4 8-4s8 0 8 4" stroke="#4bc714" stroke-width="2" fill="none"/>
+                            </svg>
+                        </i>
+                        <span style="color:#4bc714;font-size:2.2rem;font-weight:700;">5000+</span>
+                        <h3 style="color:#fff;font-size:1.5rem;">Registered Farmers</h3>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="for_box text-center">
+                        <i class="stat-icon" aria-hidden="true">
+                            <!-- Categories SVG icon -->
+                            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="54" height="54" rx="12" fill="#052501"/>
+                                <path d="M16 38h22M20 34V20a2 2 0 012-2h10a2 2 0 012 2v14" stroke="#4bc714" stroke-width="3" fill="none"/>
+                            </svg>
+                        </i>
+                        <span style="color:#4bc714;font-size:2.2rem;font-weight:700;">50+</span>
+                        <h3 style="color:#fff;font-size:1.5rem;">Categories</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end for_box -->
+    <!-- offer -->
+    <div class="offer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2>Download <strong class="black"> MYHAL</strong></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offer-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="offer_box">
+                            <h3>Download the App Now and Start Your Farming Journey With Us!</h3>
+                            <p>Join the revolution in agriculture. Download MYHAL today and experience the future of farming at your fingertips.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="offer_img">
+                            <figure><a href="https://play.google.com/store/apps/details?id=com.myhal.myhal" target="_blank" rel="noopener noreferrer" aria-label="Download MYHAL on Google Play (opens in new tab)" title="Download MYHAL on Google Play"><img class="play-badge" src="images/gplay.png" alt="Download MYHAL on Google Play" /><span class="sr-only">Download MYHAL on Google Play (opens in new tab)</span></a></figure>
+                        </div>
+                    </div>
+                </div>       
+        </div>
+    </div>
+
+    <!-- end offer -->
+
+    <!-- product  -->
+    <div id="product" class="product">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title">
+                            <h2>MYHAL <strong class="black">Products & Services</strong></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <figure>
+                                
+                                    <a href="Agricultureclassified.html">
+                                        <img src="images/classified.png" alt="Agriculture Classified">
+                
+                                    <h3>Agriculture Classified </h3>
+                                </a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <figure>
+                                    <a href="landscape.html">
+                                    <img src="images/landscape.jpg" alt="Landscaping Supplies">
+                                    
+                                    <h3>LandScaping Supplies  </h3>
+                                </a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <figure>
+                                <a href="Equipment.html">
+                                    <img src="images/agriequipment.jpg" alt="Agriculture Equipment">
+                                    <h3>Buy or Sell Agriculture Equipments </h3>
+                                </a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <figure>
+                                    <a href="fertilizer.html">
+                                    <img src="images/khaad.jpg" alt="Organic Nutrients and Insecticides">
+                                
+                                    <h3>Organic Nutrients and Insecticides</h3>
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <figure>
+                                    <a href="AIsolution.html">
+                                    <img src="images/AI.png" alt="AI Based Solution">
+                                    <h3>AI Based Solution </h3>
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <figure>
+                                <a href="agriculturecomodities.html">
+                                    <img src="images/commodities.jpg" alt="Agriculture Comodities">
+                                    <h3>Agriculture Comodities </h3>
+                                </a>
+                                </figure>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+   
+
+     <!--end product -->
+    <!-- clients -->
+    <div id="testimonial" class="clients">
+    <div class="container py-3">
+            <div class="testimonial-title text-center mb-5">
+                <span style="display:block; font-size:2.8rem; font-weight:800; color:#052501; letter-spacing:-1px;">MYHAL</span>
+                <span style="display:block; font-size:2.4rem; font-weight:700; color:#4bc714; margin-top:0.2em;">TESTIMONIALS</span>
+                <hr style="width:60%;margin:1.2em auto 0 auto;border:0;border-top:2px solid #052501;opacity:0.4;" />
+            </div>
+            <div id="testimonial-carousel" class="testimonial-carousel">
+                <div id="testimonial-cards-container" class="row justify-content-center">
+                    <!-- Testimonial cards will be dynamically inserted here -->
+                                                                                        <div class="testimonial-card-grid shadow-sm rounded-lg p-2 h-100 position-relative" style="background:#fff; border-radius:12px; border:1px solid #eee; min-width:160px; margin:8px; display:flex; flex-direction:column; align-items:center;">
+                                                                                            <div style="height:4px; background:#4bc714; border-radius:12px 12px 0 0; position:absolute; top:0; left:0; right:0;"></div>
+                                                                                            <img src='images/user1.png' alt='सुरेश चौहान' style="width:48px; height:48px; border-radius:50%; box-shadow:0 2px 8px rgba(76,199,20,0.13); border:3px solid #fff; margin-top:1.2rem; margin-bottom:0.6rem;" />
+                                                                                            <div style="font-weight:700; font-size:1rem; color:#052501; text-align:center;">सुरेश चौहान</div>
+                                                                                            <div style="color:#4bc714; font-size:0.9rem; font-weight:600; text-align:center; margin-bottom:0.6rem;">झांसी, उत्तर प्रदेश</div>
+                                                                                            <div class="testimonial-quote-grid mb-2" style="font-size:0.95rem; color:#222; font-style:italic; text-align:center; background:#eafbe7; border-radius:10px; padding:1rem 0.7rem; margin-top:0.2rem;">“पहले हमें फसल बेचने के लिए बिचौलियों पर निर्भर रहना पड़ता था। कभी दाम कम मिलते थे, तो कभी भुगतान महीनों बाद आता था। MYHAL से जुड़ने के बाद मैंने अपनी फसल सीधे किसानों और खरीदारों को बेची। दाम अच्छा मिला, पैसा तुरंत खाते में आया और सबसे बड़ी बात — भरोसा बना। अब लगता है कि किसान भी डिजिटल दुनिया में आगे बढ़ सकते हैं।”</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class='col-lg-2 col-md-4 col-sm-6 mb-3'>
+                                                                                        <div class="testimonial-card-grid shadow-sm rounded-lg p-2 h-100 position-relative" style="background:#fff; border-radius:12px; border:1px solid #eee; min-width:160px; margin:8px; display:flex; flex-direction:column; align-items:center;">
+                                                                                            <div style="height:4px; background:#4bc714; border-radius:12px 12px 0 0; position:absolute; top:0; left:0; right:0;"></div>
+                                                                                            <img src='images/user2.png' alt='সুকুমার দত্ত' style="width:48px; height:48px; border-radius:50%; box-shadow:0 2px 8px rgba(76,199,20,0.13); border:3px solid #fff; margin-top:1.2rem; margin-bottom:0.6rem;" />
+                                                                                            <div style="font-weight:700; font-size:1rem; color:#052501; text-align:center;">সুকুমার দত্ত</div>
+                                                                                            <div style="color:#4bc714; font-size:0.9rem; font-weight:600; text-align:center; margin-bottom:0.6rem;">নদীয়া, পশ্চিমবঙ্গ</div>
+                                                                                            <div class="testimonial-quote-grid mb-2" style="font-size:0.95rem; color:#222; font-style:italic; text-align:center; background:#eafbe7; border-radius:10px; padding:1rem 0.7rem; margin-top:0.2rem;">“আগে আমি আমার ফসল বিক্রি করতে অনেক কষ্ট পেতাম। দালালরা দাম কমিয়ে দিত আর পেমেন্ট দিতে দেরি করত। MYHAL-এ আমার পণ্য আপলোড করার পর অনেক ক্রেতা আমার সঙ্গে যোগাযোগ করল। আমি আমার আমের ফসল খুব ভালো দামে বিক্রি করেছি। এখন আমি প্রতিবার ফসল তোলার পর MYHAL ব্যবহার করি — এটা আমার নিজের বাজার।”</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class='col-lg-2 col-md-4 col-sm-6 mb-3'>
+                                                                                        <div class="testimonial-card-grid shadow-sm rounded-lg p-2 h-100 position-relative" style="background:#fff; border-radius:12px; border:1px solid #eee; min-width:160px; margin:8px; display:flex; flex-direction:column; align-items:center;">
+                                                                                            <div style="height:4px; background:#4bc714; border-radius:12px 12px 0 0; position:absolute; top:0; left:0; right:0;"></div>
+                                                                                            <img src='images/user3.png' alt='ಬಸವರಾಜ ಪಾಟೀಲ' style="width:48px; height:48px; border-radius:50%; box-shadow:0 2px 8px rgba(76,199,20,0.13); border:3px solid #fff; margin-top:1.2rem; margin-bottom:0.6rem;" />
+                                                                                            <div style="font-weight:700; font-size:1rem; color:#052501; text-align:center;">ಬಸವರಾಜ ಪಾಟೀಲ</div>
+                                                                                            <div style="color:#4bc714; font-size:0.9rem; font-weight:600; text-align:center; margin-bottom:0.6rem;">ಬಿಜಾಪುರ, ಕರ್ನಾಟಕ</div>
+                                                                                            <div class="testimonial-quote-grid mb-2" style="font-size:0.95rem; color:#222; font-style:italic; text-align:center; background:#eafbe7; border-radius:10px; padding:1rem 0.7rem; margin-top:0.2rem;">“ಹಿಂದೆ ನಾನು ಬೆಳೆ ಮಾರಾಟಕ್ಕೆ ವ್ಯಾಪಾರಿಗಳ ಮೇಲೆ ಅವಲಂಬಿತರಾಗಿದ್ದೆ. ಆದರೆ MYHAL ಮೂಲಕ ನಾನು ನನ್ನ ಈರುಳ್ಳಿ ನೇರವಾಗಿ ಖರೀದಿದಾರರಿಗೆ ಮಾರಾಟ ಮಾಡಿದೆ. ನನ್ನ ಬೆಳೆಗೆ ಉತ್ತಮ ಬೆಲೆ ಸಿಕ್ಕಿತು, ಪಾವತಿಗಳು ತಕ್ಷಣ ಬಂದವು. ಈಗ ನನ್ನ ಹಳ್ಳಿಯ ಇತರ ರೈತರೂ MYHAL ಬಳಕೆ ಮಾಡುತ್ತಿದ್ದಾರೆ, ಏಕೆಂದರೆ ಇದು ನಿಜವಾದ ರೈತರ ವೇದಿಕೆ.”</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class='col-lg-2 col-md-4 col-sm-6 mb-3'>
+                                                                                        <div class="testimonial-card-grid shadow-sm rounded-lg p-2 h-100 position-relative" style="background:#fff; border-radius:12px; border:1px solid #eee; min-width:160px; margin:8px; display:flex; flex-direction:column; align-items:center;">
+                                                                                            <div style="height:4px; background:#4bc714; border-radius:12px 12px 0 0; position:absolute; top:0; left:0; right:0;"></div>
+                                                                                            <img src='images/user1.png' alt='వెంకటేష్ రావు' style="width:48px; height:48px; border-radius:50%; box-shadow:0 2px 8px rgba(76,199,20,0.13); border:3px solid #fff; margin-top:1.2rem; margin-bottom:0.6rem;" />
+                                                                                            <div style="font-weight:700; font-size:1rem; color:#052501; text-align:center;">వెంకటేష్ రావు</div>
+                                                                                            <div style="color:#4bc714; font-size:0.9rem; font-weight:600; text-align:center; margin-bottom:0.6rem;">గుంటూరు, ఆంధ్రప్రదేశ్</div>
+                                                                                            <div class="testimonial-quote-grid mb-2" style="font-size:0.95rem; color:#222; font-style:italic; text-align:center; background:#eafbe7; border-radius:10px; padding:1rem 0.7rem; margin-top:0.2rem;">“MYHAL వాడకానికి ముందు నేను మధ్యవర్తుల మీద ఆధారపడి ఉండేవాడిని. ఇప్పుడు నేను నా పంటను యాప్‌లో అప్‌లోడ్ చేస్తాను, కొనుగోలుదారులు నేరుగా సంప్రదిస్తారు. ఈ సారి నేను నా మిరప పంటను మంచి రేటుకి అమ్మగలిగాను. డబ్బు కూడా అదే రోజున బ్యాంక్‌లోకి వచ్చింది. ఇది నిజంగా రైతులకు ఉపయోగపడే యాప్.”</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class='col-lg-2 col-md-4 col-sm-6 mb-3'>
+                                                                                        <div class="testimonial-card-grid shadow-sm rounded-lg p-2 h-100 position-relative" style="background:#fff; border-radius:12px; border:1px solid #eee; min-width:160px; margin:8px; display:flex; flex-direction:column; align-items:center;">
+                                                                                            <div style="height:4px; background:#4bc714; border-radius:12px 12px 0 0; position:absolute; top:0; left:0; right:0;"></div>
+                                                                                            <img src='images/user2.png' alt='முருகேசன்' style="width:48px; height:48px; border-radius:50%; box-shadow:0 2px 8px rgba(76,199,20,0.13); border:3px solid #fff; margin-top:1.2rem; margin-bottom:0.6rem;" />
+                                                                                            <div style="font-weight:700; font-size:1rem; color:#052501; text-align:center;">முருகேசன்</div>
+                                                                                            <div style="color:#4bc714; font-size:0.9rem; font-weight:600; text-align:center; margin-bottom:0.6rem;">சேலம், தமிழ்நாடு</div>
+                                                                                            <div class="testimonial-quote-grid mb-2" style="font-size:0.95rem; color:#222; font-style:italic; text-align:center; background:#eafbe7; border-radius:10px; padding:1rem 0.7rem; margin-top:0.2rem;">“முந்தைய காலங்களில் நாங்கள் விளைபொருட்களை விற்க பல இடங்களுக்கும் போயிருக்க வேண்டும். ஆனால் MYHAL மூலம், நான் என் காய்கறிகளை நேரடியாக விற்றேன். சிறந்த விலை கிடைத்தது, உடனடி பணம் வந்தது. இது நம்மைப் போன்ற சிறு விவசாயிகளுக்குப் பெரிய ஆதரவாக இருக்கிறது. இதனால் நம்பிக்கை வந்தது — நாமும் தொழில்நுட்பத்துடன் முன்னேறலாம்.”</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                    <button id="testimonial-prev" class="btn btn-success px-4 py-2" aria-label="Previous testimonial">&#8592; Prev</button>
+                    <div id="testimonial-dots" style="display:flex; gap:6px;"></div>
+                    <button id="testimonial-next" class="btn btn-success px-4 py-2" aria-label="Next testimonial">Next &#8594;</button>
+                </div>
+            </div>
+        </div>
+        <script>
+        // Testimonial data
+        const testimonials = [
+            // Hindi
+            {img:'images/user1.png', name:'सुरेश चौहान', role:'झांसी, उत्तर प्रदेश', quote:'“पहले हमें फसल बेचने के लिए बिचौलियों पर निर्भर रहना पड़ता था। कभी दाम कम मिलते थे, तो कभी भुगतान महीनों बाद आता था। MYHAL से जुड़ने के बाद मैंने अपनी फसल सीधे किसानों और खरीदारों को बेची। दाम अच्छा मिला, पैसा तुरंत खाते में आया और सबसे बड़ी बात — भरोसा बना। अब लगता है कि किसान भी डिजिटल दुनिया में आगे बढ़ सकते हैं।”'},
+            // Bengali
+            {img:'images/user2.png', name:'সুকুমার দত্ত', role:'নদীয়া, পশ্চিমবঙ্গ', quote:'“আগে আমি আমার ফসল বিক্রি করতে অনেক কষ্ট পেতাম। দালালরা দাম কমিয়ে দিত আর পেমেন্ট দিতে দেরি করত। MYHAL-এ আমার পণ্য আপলোড করার পর অনেক ক্রেতা আমার সঙ্গে যোগাযোগ করল। আমি আমার আমের ফসল খুব ভালো দামে বিক্রি করেছি। এখন আমি প্রতিবার ফসল তোলার পর MYHAL ব্যবহার করি — এটা আমার নিজের বাজার।”'},
+            // Kannada
+            {img:'images/user3.png', name:'ಬಸವರಾಜ ಪಾಟೀಲ', role:'ಬಿಜಾಪುರ, ಕರ್ನಾಟಕ', quote:'“ಹಿಂದೆ ನಾನು ಬೆಳೆ ಮಾರಾಟಕ್ಕೆ ವ್ಯಾಪಾರಿಗಳ ಮೇಲೆ ಅವಲಂಬಿತರಾಗಿದ್ದೆ. ಆದರೆ MYHAL ಮೂಲಕ ನಾನು ನನ್ನ ಈರುಳ್ಳಿ ನೇರವಾಗಿ ಖರೀದಿದಾರರಿಗೆ ಮಾರಾಟ ಮಾಡಿದೆ. ನನ್ನ ಬೆಳೆಗೆ ಉತ್ತಮ ಬೆಲೆ ಸಿಕ್ಕಿತು, ಪಾವತಿಗಳು ತಕ್ಷಣ ಬಂದವು. ಈಗ ನನ್ನ ಹಳ್ಳಿಯ ಇತರ ರೈತರೂ MYHAL ಬಳಕೆ ಮಾಡುತ್ತಿದ್ದಾರೆ, ಏಕೆಂದರೆ ಇದು ನಿಜವಾದ ರೈತರ ವೇದಿಕೆ.”'},
+            // Telugu
+            {img:'images/user1.png', name:'వెంకటేష్ రావు', role:'గుంటూరు, ఆంధ్రప్రదేశ్', quote:'“MYHAL వాడకానికి ముందు నేను మధ్యవర్తుల మీద ఆధారపడి ఉండేవాడిని. ఇప్పుడు నేను నా పంటను యాప్‌లో అప్‌లోడ్ చేస్తాను, కొనుగోలుదారులు నేరుగా సంప్రదిస్తారు. ఈ సారి నేను నా మిరప పంటను మంచి రేటుకి అమ్మగలిగాను. డబ్బు కూడా అదే రోజున బ్యాంక్‌లోకి వచ్చింది. ఇది నిజంగా రైతులకు ఉపయోగపడే యాప్.”'},
+            // Tamil
+            {img:'images/user2.png', name:'முருகேசன்', role:'சேலம், தமிழ்நாடு', quote:'“முந்தைய காலங்களில் நாங்கள் விளைபொருட்களை விற்க பல இடங்களுக்கும் போயிருக்க வேண்டும். ஆனால் MYHAL மூலம், நான் என் காய்கறிகளை நேரடியாக விற்றேன். சிறந்த விலை கிடைத்தது, உடனடி பணம் வந்தது. இது நம்மைப் போன்ற சிறு விவசாயிகளுக்குப் பெரிய ஆதரவாக இருக்கிறது. இதனால் நம்பிக்கை வந்தது — நாமும் தொழில்நுட்பத்துடன் முன்னேறலாம்.”'},
+            // Malayalam
+            {img:'images/user3.png', name:'ബിജു തോമസ്', role:'കോട്ടയം, കേരളം', quote:'“MYHAL ഉപയോഗിക്കുന്നതിനു മുമ്പ് ഞാന്‍ ഇടനിലക്കാരെ ആശ്രയിച്ചിരുന്നു. വിലയും വൈകിയും കിട്ടി. ഇപ്പോള്‍ വിളകള്‍ നേരിട്ട് ആപ്പില്‍ ഇടുമ്പോള്‍ നല്ല വിലയ്ക്ക് വാങ്ങുന്നവര്‍ നേരിട്ട് ബന്ധപ്പെടുന്നു. കഴിഞ്ഞ തവണ ഞാന്‍ പച്ചക്കറികള്‍ വില്‍ക്കുമ്പോള്‍ തന്നെ പണം അക്കൗണ്ടില്‍ ലഭിച്ചു. ഇത് ഞങ്ങളുപോലെ ചെറുകർഷകർക്ക് വലിയ ആശ്വാസമാണ്.”'},
+            // Gujarati
+            {img:'images/user1.png', name:'રમિલાબેન પટેલ', role:'આનંદ, ગુજરાત', quote:'“MYHAL સાથે જોડાયા પછી મારી દૂધની વસ્તુઓ સીધા ગ્રાહકો સુધી પહોંચે છે. પહેલાં મધ્યસ્થીઓને કમિશન આપવું પડતું, હવે નથી. ગ્રાહક સાથે સીધો સંપર્ક થાય છે, ભાવ સારો મળે છે અને ચુકવણી પણ તરત થાય છે. હવે હું રોજ નવા ગ્રાહકો સુધી MYHAL દ્વારા પહોંચી શકું છું.”'},
+            // Marathi
+            {img:'images/user2.png', name:'गणेश पाटील', role:'सांगली, महाराष्ट्र', quote:'“पूर्वी ऊस विकताना आम्हाला कारखानदार आणि दलाल यांच्यावर अवलंबून राहावे लागायचे. MYHAL वर लिस्टिंग केल्यानंतर थेट खरेदीदार माझ्याशी संपर्क साधतात. दर चांगला मिळतो आणि पेमेंट त्वरित होते. हे अॅप खरोखर शेतकऱ्यांच्या हातात शक्ती देतंय!”'},
+            // Punjabi
+            {img:'images/user3.png', name:'ਮਨਜੀਤ ਸਿੰਘ', role:'ਲੁਧਿਆਣਾ, ਪੰਜਾਬ', quote:'“ਪਹਿਲਾਂ ਸਾਡੇ ਪਿੰਡ ਦੇ ਸਾਰੇ ਕਿਸਾਨ ਫਸਲ ਵੇਚਣ ਲਈ ਦਲਾਲਾਂ ਉੱਤੇ ਨਿਰਭਰ ਸਨ। MYHAL ਨਾਲ ਮੈਂ ਆਪਣੀ ਫਸਲ ਸਿੱਧੇ ਖਰੀਦਦਾਰਾਂ ਤੱਕ ਵੇਚੀ। ਹੁਣ ਸਾਡੀ ਕਮਾਈ ਵਧ ਗਈ ਹੈ, ਪੈਸਾ ਵੀ ਸਮੇਂ ਤੇ ਮਿਲਦਾ ਹੈ। ਇਹ ਪਲੇਟਫਾਰਮ ਸਾਡੇ ਲਈ ਇਕ ਨਵਾਂ ਆਸਰਾ ਹੈ।”'},
+            // Odia
+            {img:'images/user1.png', name:'ବିଜୟ ବେହେରା', role:'କଟକ, ଓଡ଼ିଶା', quote:'“MYHAL ଆସିବା ପୂର୍ବରୁ ମୋତେ ମାଛ ଓ ସବ୍ଜି ବିକ୍ରି କରିବା ପାଇଁ ଦାଲାଲଙ୍କ ଉପରେ ଭରସା କରିବାକୁ ପଡ଼ୁଥିଲା। ବର୍ତ୍ତମାନ ଆପ୍‌ରେ ନିଜେ ତାଲିକା କରି ପାରୁଛି ଏବଂ ସିଧା ଗ୍ରାହକ ସହିତ ସମ୍ପର୍କ ହେଉଛି। ମୋ ଆୟ ବଢ଼ିଲା ଏବଂ ନିଜ ହାତରେ ନିଜ ମାର୍କେଟ ଆସିଲା।”'},
+            // Assamese
+            {img:'images/user2.png', name:'অনিল বৰা', role:'নগাঁও, অসম', quote:'“আগতে ধান বিক্ৰী কৰিবলৈ বহুত কষ্ট হৈছিল। দালালসকল সময় ল’ব, দাম কম দিব। কিন্তু MYHALত আমি ফসলৰ ফটো উঠালেই খৰিদাৰ নিজে যোগাযোগ কৰে। বৰ্ষৰ ভিতৰত মই দুবাৰ ধান বিক্ৰী কৰিছো — দুয়োখনত ভাল মূল্য পাইছো।”'},
+            // Urdu
+            {img:'images/user3.png', name:'غلام نبی', role:'بریلی، اتر پردیش', quote:'“پہلے میری سبزیاں گاؤں کے دلالوں کے ذریعے ہی بکتی تھیں۔ نہ قیمت اچھی ملتی تھی نہ وقت پر پیسے۔ MYHAL نے میری زندگی بدل دی۔ اب میں خود خریداروں سے رابطہ کرتا ہوں، بہتر دام پاتا ہوں اور پیسے فوراً اکاؤنٹ میں آجاتے ہیں۔ یہ واقعی کسانوں کے لیے نعمت ہے۔”'},
+            // Hindi (Ramesh Yadav)
+            {img:'images/user1.png', name:'Ramesh Yadav', role:'Varanasi, Uttar Pradesh', quote:'“Before joining MYHAL, I used to depend on middlemen who paid low and delayed payments. Through MYHAL, I listed my crops directly and connected with genuine buyers. I sold my wheat within days at a much better rate and received the money instantly in my bank account. For the first time, I felt that technology is truly helping farmers like me.”'},
+            // Sinhala
+            {img:'images/user2.png', name:'නිහාල් පෙරේරා', role:'කෑගල්ල, ශ්‍රී ලංකාව', quote:'“MYHAL භාවිතා කිරීමට පෙර මට බෝග විකිණීමට මැදිහත්කරුවන්ට විශ්වාස කළ යුතු වුණා. දැන් මට නව ක්ෂේත්‍රයක් විවෘත වුණා — මගේ බෝග සෘජුවම මිලදී ගන්නා අය වෙත විකිණීමට හැකි වුණා. අලුත් පාරිභෝගිකයන් හා සබඳතා ඇතිවුණා, ලාභයද වැඩිවුණා. මේ ඇප් එක ගොවියන්ට අලුත් ආරම්භයක්!”'}
+        ];
+        
+        const itemsPerPage = 5;
+        let currentPage = 0;
+        const totalPages = Math.ceil(testimonials.length / itemsPerPage);
+        
+        function renderTestimonials(page) {
+            const container = document.getElementById('testimonial-cards-container');
+            container.innerHTML = '';
+            
+            const start = page * itemsPerPage;
+            const end = Math.min(start + itemsPerPage, testimonials.length);
+            
+            for (let i = start; i < end; i++) {
+                const t = testimonials[i];
+                const col = document.createElement('div');
+                col.className = 'col-lg-2 col-md-4 col-sm-6 mb-3';
+                col.innerHTML = `
+                    <div class="testimonial-card-grid shadow-sm rounded-lg p-2 h-100 position-relative" style="background:#fff; border-radius:12px; border:1px solid #eee; min-width:160px; margin:8px; display:flex; flex-direction:column; align-items:center; transition:transform 0.3s;">
+                        <div style="height:4px; background:#4bc714; border-radius:12px 12px 0 0; position:absolute; top:0; left:0; right:0;"></div>
+                        <img src='${t.img}' alt='${t.name}' style="width:48px; height:48px; border-radius:50%; box-shadow:0 2px 8px rgba(76,199,20,0.13); border:3px solid #fff; margin-top:1.2rem; margin-bottom:0.6rem;" />
+                        <div style="font-weight:700; font-size:0.95rem; color:#052501; text-align:center;">${t.name}</div>
+                        <div style="color:#4bc714; font-size:0.85rem; font-weight:600; text-align:center; margin-bottom:0.6rem;">${t.role}</div>
+                        <div class="testimonial-quote-grid mb-2" style="font-size:0.85rem; color:#222; font-style:italic; text-align:center; background:#eafbe7; border-radius:10px; padding:0.8rem 0.6rem; margin-top:0.2rem; line-height:1.4;">${t.quote}</div>
+                    </div>
+                `;
+                container.appendChild(col);
+            }
+            
+            // Update dots
+            const dotsContainer = document.getElementById('testimonial-dots');
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i < totalPages; i++) {
+                const dot = document.createElement('span');
+                dot.style.width = '12px';
+                dot.style.height = '12px';
+                dot.style.borderRadius = '50%';
+                dot.style.display = 'inline-block';
+                dot.style.background = i === page ? '#4bc714' : '#eafbe7';
+                dot.style.cursor = 'pointer';
+                dot.style.transition = 'all 0.3s';
+                dot.onclick = () => {
+                    currentPage = i;
+                    renderTestimonials(i);
+                };
+                dotsContainer.appendChild(dot);
+            }
+        }
+        
+        document.getElementById('testimonial-prev').onclick = function() {
+            currentPage = (currentPage - 1 + totalPages) % totalPages;
+            renderTestimonials(currentPage);
+        };
+        
+        document.getElementById('testimonial-next').onclick = function() {
+            currentPage = (currentPage + 1) % totalPages;
+            renderTestimonials(currentPage);
+        };
+        
+        // Initial render
+        renderTestimonials(0);
+        </script>
+  
+    <!-- end clients -->
+    <!-- contact section removed -->
+
+    <!-- footer -->
+    <!--  footer -->
+    <footr>
+        <div class="footer top_layer ">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="address">
+                            <a href="index.html"> <img src="images/logo.png" alt="MyHAL Footer Logo" /></a>
+                        
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="address">
+                            <h3>Quick links</h3>
+                                <ul class="Links_footer">
+                                <li><img src="icon/3.png" alt="#" /> <a href="index.html">Home</a> </li>
+                                <li><img src="icon/3.png" alt="#" /> <a href="#footer-contact">Contact Us</a> </li>
+                                <li><img src="icon/3.png" alt="#" /> <a href="index.html#testimonial">Testimonial</a> </li>
+                                <li><img src="icon/3.png" alt="#" /> <a href="index.html#about">About US</a> </li>
+                                <li><img src="icon/3.png" alt="#" /> <a href="privacypolicy.html">Privacy Policy</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+
+    
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12" id="footer-contact">
+                        <div class="address">
+                            <h3>Contact Us</h3>
+
+                            <ul class="loca">
+                                <li>
+                                    <a href="#" style="display:inline-flex; align-items:center; gap:12px;">
+                                        <img src="icon/loc.png" alt="#" style="width:32px; height:32px;" />
+                                        <span>Nanak Pura, Hari Nagar (west Delhi), West Delhi, New Delhi, Delhi, India, 110064</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="icon/email.png" alt="#" /></a>hello@myhal.in </li>
+                                <li>
+                                    <a href="#"><img src="icon/call.png" alt="#" /></a>+918376883780 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <div class="copyright">
+            <div class="container">
+                <p>© 2025 All Rights Reserved. Design By MyHAL</p>
+           
+        </div>
+        </div>
+    </footr>
+
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+
+            $(".zoom").hover(function() {
+
+                $(this).addClass('transition');
+            }, function() {
+
+                $(this).removeClass('transition');
+            });
+        });
+    </script>
+    <script>
+        // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+        // Australia.
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: {
+                    lat: 40.645037,
+                    lng: -73.880224
+                },
+            });
+
+            var image = 'images/maps-and-flags.png';
+            var beachMarker = new google.maps.Marker({
+                position: {
+                    lat: 40.645037,
+                    lng: -73.880224
+                },
+                map: map,
+                icon: image
+            });
+        }
+    </script>
+    <!-- google map js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+    <!-- end google map js -->
+        <!-- Google Translate widget -->
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,hi,ta,te,ml,gu,bn,pa,or',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            (function(){
+                // Language suggestion banner: detect browser language and offer switch.
+                var key = 'myhal_lang_suggest_dismissed_v1';
+                try{
+                    if(localStorage.getItem(key)) return;
+                }catch(e){/* localStorage not available */}
+
+                function isOnHiPage(){
+                    var p = location.pathname.replace(/\/$/, '');
+                    return /(^|\/)hi(\/|$)/i.test(p) || /hi\/index\.html$/i.test(p);
+                }
+
+                var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+                // small delay so the page appears smoother
+                setTimeout(function(){
+                    var wantHi = /^hi/i.test(lang);
+                    var onHi = isOnHiPage();
+                    if(wantHi && !onHi){
+                        showBanner('hi');
+                    } else if(!wantHi && onHi){
+                        showBanner('en');
+                    }
+                }, 600);
+
+                function showBanner(target){
+                    var b = document.getElementById('langBanner');
+                    if(!b) return;
+                    b.style.display = 'block';
+                    document.body.classList.add('lang-banner-visible');
+                    var switchBtn = document.getElementById('langBannerSwitch');
+                    var closeBtn = document.getElementById('langBannerClose');
+                    if(switchBtn){
+                        if(target === 'hi'){
+                            switchBtn.setAttribute('href','hi/index.html');
+                            switchBtn.textContent = 'Switch to हिन्दी';
+                        } else {
+                            switchBtn.setAttribute('href','index.html');
+                            switchBtn.textContent = 'Switch to English';
+                        }
+                    }
+                    if(closeBtn){
+                        closeBtn.addEventListener('click', function(ev){
+                            ev.preventDefault();
+                            try{ localStorage.setItem(key,'1'); }catch(e){}
+                            b.style.display = 'none';
+                            document.body.classList.remove('lang-banner-visible');
+                        }, {once:true});
+                    }
+                }
+            })();
+        </script>
+                <script>
+                    // Ensure the right-side hero mockup matches the left column height on large screens.
+                    (function(){
+                        function debounce(fn, wait){
+                            var t; return function(){ clearTimeout(t); t = setTimeout(fn, wait); };
+                        }
+                                    function syncHeroVisualHeight(){
+                                        try{
+                                            var leftCol = document.querySelector('.hero .container .row > .col-lg-6:not(.hero-visual)');
+                                            var visualCard = document.querySelector('.hero-visual .visual-card');
+                                            var img = visualCard ? visualCard.querySelector('img') : null;
+                                            if(!leftCol || !visualCard) return;
+                                            var leftH = Math.round(leftCol.getBoundingClientRect().height);
+                                            // cap the visual card to the left column height
+                                            visualCard.style.maxHeight = leftH + 'px';
+                                            // set image max-height to a percentage of left height (85%) so person+phone fit comfortably
+                                            if(img){ img.style.maxHeight = Math.round(leftH * 0.85) + 'px'; img.style.height = 'auto'; }
+                                        }catch(e){/* ignore */}
+                                    }
+                        window.addEventListener('load', syncHeroVisualHeight);
+                        window.addEventListener('resize', debounce(syncHeroVisualHeight, 120));
+                        // re-run after fonts/images may load
+                        setTimeout(syncHeroVisualHeight, 600);
+                    })();
+                </script>
+</body>
+
+</html>

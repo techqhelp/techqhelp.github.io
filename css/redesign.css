@@ -1,0 +1,735 @@
+/* Stats Section V2 */
+.stats-section-new {
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-section-new::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.stat-card-v2 {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Ensure vertical spacing between tiles even on Bootstrap 4 (no g-*) */
+.stats-section-new .row > [class*="col-"] { 
+  margin-bottom: 24px; 
+}
+.stats-section-new .stat-card-v2 { 
+  margin-bottom: 4px; /* small inner safety so shadows don't touch */
+}
+
+.stat-card-v2:hover {
+  transform: translateY(-12px);
+  background: #ffffff !important;
+  border-color: rgba(5, 37, 1, 0.12);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
+}
+
+/* On touch/mobile, avoid hover lift that can cause overlap on tap */
+@media (hover: none) and (pointer: coarse) {
+  .stat-card-v2:hover { transform: none; }
+}
+
+@media (max-width: 767.98px) {
+  .stat-card-v2 { padding: 2rem 1.25rem !important; }
+}
+
+.stat-card-v2:hover .stat-icon-circle {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card-v2:hover .stat-badge {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon-circle {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.stat-badge {
+  transition: all 0.3s ease;
+}
+
+.stat-number {
+  display: inline-block;
+  min-width: 40px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.testimonial-carousel {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(120deg,#f8fff8 80%,#eafbe7 100%);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(76,199,20,0.07);
+  padding: 1.2rem 0 1.8rem 0;
+}
+
+.testimonial-card-modern:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(76,199,20,0.15) !important;
+  border-top-color: #052501 !important;
+}
+.testimonial-card {
+  background: transparent;
+  border-radius: 18px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+.testimonial-image img {
+  border-radius: 50%;
+  box-shadow: 0 8px 32px rgba(76,199,20,0.13);
+  border: 5px solid #ff9800;
+  object-fit: cover;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1.2rem;
+}
+.testimonial-name {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #052501;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.testimonial-role {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #4bc714;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+.testimonial-quote-card {
+  background: #eafbe7;
+  color: #052501;
+  border-radius: 18px;
+  padding: 2.8rem 2.8rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  position: relative;
+  margin-top: 2.2rem;
+  box-shadow: 0 4px 18px rgba(76,199,20,0.08);
+  text-align: center;
+}
+.testimonial-quote-card:before {
+  content: "\201C";
+  font-size: 2.8rem;
+  color: #4bc714;
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  line-height: 1;
+}
+.testimonial-quote-card:after {
+  content: "\201D";
+  font-size: 2.8rem;
+  color: #4bc714;
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  line-height: 1;
+}
+.testimonial-carousel .btn {
+  min-width: 90px;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+.testimonial-carousel #testimonial-dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #eafbe7;
+  margin: 0 2px;
+  transition: background 0.2s;
+}
+.testimonial-carousel #testimonial-dots span.active {
+  background: #4bc714;
+}
+@media (max-width: 576px) {
+  .testimonial-carousel {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 8px;
+    border-radius: 12px;
+  }
+  .testimonial-card {
+    padding: 0.5rem 0.5rem;
+  }
+  .testimonial-image img {
+    width: 70px;
+    height: 70px;
+  }
+  .testimonial-name { font-size: 1.2rem; }
+  .testimonial-role { font-size: 1rem; }
+  .testimonial-quote-card { font-size: 1rem; padding: 1.2rem 0.5rem; }
+  .testimonial-quote-card:before, .testimonial-quote-card:after {
+    font-size: 2rem;
+    left: 10px;
+    right: 10px;
+    top: 8px;
+    bottom: 8px;
+  }
+}
+/* Testimonial modern redesign */
+.testimonial-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(76,199,20,0.09);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  margin-bottom: 0;
+}
+.testimonial-image img {
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(76,199,20,0.13);
+  border: 3px solid #2196f3;
+  object-fit: cover;
+  width: 90px;
+  max-width: 90px;
+}
+.testimonial-content {
+  flex: 1;
+  min-width: 260px;
+  padding-left: 2rem;
+}
+.testimonial-name {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #052501;
+  margin-bottom: 0.5rem;
+}
+.testimonial-role {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #4bc714;
+  margin-bottom: 1.2rem;
+}
+.testimonial-quote-card span {
+  display: inline;
+}
+/* keep span styling above to avoid empty block lint issues */
+@media (max-width: 991px) {
+  .testimonial-card { flex-direction: column; padding: 2rem 1rem; }
+  .testimonial-content { padding-left: 0; margin-top: 1.5rem; }
+  .testimonial-image img { max-width: 100%; }
+}
+@media (max-width: 576px) {
+  .testimonial-card { padding: 1.2rem 0.5rem; }
+  .testimonial-name { font-size: 1.3rem; }
+  .testimonial-role { font-size: 1rem; }
+  .testimonial-quote-card { font-size: 1rem; padding: 1.2rem 0.7rem; }
+}
+/* Minimal redesign styles: navbar, hero, translations, and responsive tweaks */
+:root{
+  --brand:#052501;
+  --accent:#4bc714;
+  --muted:#666;
+}
+/* Navbar */
+.navbar-custom{
+  background:var(--brand);
+  padding:10px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.navbar-custom .navbar-brand img{height:70px; max-height:70px;}
+.navbar-custom .nav-link{
+  color:#fff; 
+  font-weight:500; 
+  padding:8px 16px;
+  font-size:15px;
+  transition: all 0.3s ease;
+}
+.navbar-custom .nav-link:hover{
+  color:var(--accent);
+  transform: translateY(-2px);
+}
+.navbar-custom .nav-item.active .nav-link{
+  color:var(--accent);
+  font-weight:600;
+}
+.navbar-custom .play-badge{max-height:40px;height:auto; transition: transform 0.3s ease;}
+.navbar-custom .play-badge:hover{transform: scale(1.05);}
+.navbar-custom .translate-wrap{margin-left:12px;}
+/* Header Contact */
+.header-contact{
+  font-size:13px;
+  line-height:1.6;
+}
+.header-contact .contact-item{
+  white-space: nowrap;
+}
+.header-contact a{
+  transition: color 0.3s ease;
+}
+.header-contact a:hover{
+  color:var(--accent) !important;
+}
+/* Hero */
+.hero{padding:80px 0; background:linear-gradient(180deg, rgba(6,34,6,0.02), rgba(6,34,6,0.04));}
+.hero .headline{font-size:34px; line-height:1.15; color:var(--brand); font-weight:700;}
+.hero .sub{color:var(--muted); font-size:16px; margin-top:12px}
+/* New English hero styles */
+.hero .hero-title{
+  color: var(--brand);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-size: clamp(34px, 5vw, 56px);
+  margin-bottom: 14px;
+}
+.hero .hero-subtitle{
+  color: #5a6a60;
+  font-size: clamp(16px, 2.1vw, 20px);
+  max-width: 62ch;
+}
+/* trust overline badge above headline */
+.hero .hero-overline-left{
+  display:inline-flex; align-items:center; gap:8px;
+  background:#ffffff; color:#052501;
+  border:1px solid rgba(5,37,1,0.08);
+  padding:6px 12px; border-radius:999px;
+  font-weight:700; font-size:0.95rem;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+  margin-bottom:10px;
+}
+.hero .hero-overline-left svg{display:block}
+/* decorative underline for the H1 */
+.hero .hero-title.has-underline::after{
+  content:""; display:block; width:70px; height:4px;
+  background: var(--accent); border-radius: 2px; margin-top:12px;
+}
+/* Features */
+.features .card{border:0; box-shadow:0 6px 18px rgba(0,0,0,0.06); border-radius:12px; padding:18px}
+.listings-tabs .nav-link{color:#052501; font-weight:700; border-radius:999px; padding:8px 14px; margin:4px; border:1px solid rgba(5,37,1,0.08);}
+.listings-tabs .nav-link.active{background:var(--accent); color:#fff; border-color:transparent}
+.listing-card{background:#fff; border:1px solid rgba(5,37,1,0.06); border-radius:18px; overflow:hidden; box-shadow:0 10px 26px rgba(5,37,1,0.06); transition:transform .2s ease, box-shadow .2s ease}
+.listing-card:hover{transform:translateY(-4px); box-shadow:0 18px 44px rgba(5,37,1,0.14)}
+.listing-thumb{position:relative; padding-top:66%; overflow:hidden; background:#f6faf6}
+.listing-thumb img{position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover}
+.listing-fav{position:absolute; top:10px; right:10px; width:40px; height:40px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 16px rgba(0,0,0,.15); color:#5a6a60; cursor:pointer}
+.listing-fav svg{width:22px; height:22px}
+.listing-fav.active{color:#e74c3c}
+.listing-body{padding:14px 14px 16px}
+.listing-views{color:#7d8a83; font-weight:600; font-size:.9rem}
+.listing-title{font-size:1.06rem; font-weight:800; color:#052501; margin:6px 0 8px; letter-spacing:-.01em}
+.listing-price-line{font-weight:800; margin-bottom:8px}
+.listing-price-label{color:#6b7a71; margin-right:6px}
+.listing-price{color:#2fa242}
+.listing-badges{display:flex; gap:8px; align-items:center; margin-bottom:6px}
+.badge-type{background:rgba(75,199,20,.12); color:#1c6f2e; font-weight:700; border-radius:999px; padding:4px 10px; font-size:.85rem}
+.listing-meta2{color:#6a7a70; font-weight:600; font-size:.95rem}
+.listing-location{color:#6a7a70; font-weight:600}
+.listing-actions{margin-top:10px}
+.listing-actions .btn-more{width:100%; font-weight:700}
+/* Footer compact */
+.footer-simple{background:#111; color:#ddd; padding:28px 0;}
+.footer-simple a{color:#fff}
+/* Translate widget adjustments */
+#google_translate_element{display:inline-block}
+.goog-te-gadget-simple select{background:transparent; color:#fff; border:0}
+/* Language switcher and banner */
+.nav-language .btn { font-weight:600; }
+.nav-language .dropdown-item { font-weight:600; }
+
+/* Language suggestion banner (top) */
+#langBanner{
+  background: linear-gradient(90deg,#fffef0,#fffbea);
+  border-bottom: 1px solid rgba(198,170,86,0.15);
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10500;
+  display: none; /* toggled by JS */
+  box-shadow: 0 6px 18px rgba(10,10,10,0.04);
+}
+#langBanner .btn { margin-left: 8px; }
+#langBanner #langBannerText{margin-right:8px; font-weight:600}
+#langBanner .btn.btn-link{color:#666}
+
+/* small-screen adjustments so banner stays readable */
+@media (max-width:576px){
+  #langBanner{font-size:14px; padding:8px}
+  body.lang-banner-visible{padding-top:56px}
+}
+/* push page content down when banner visible on small screens */
+body.lang-banner-visible { padding-top: 48px; }
+/* Responsive tweaks */
+@media(max-width:991px){
+  .navbar-custom .navbar-brand img{height:65px}
+  .header-contact{font-size:12px;}
+}
+@media(max-width:767px){
+  .hero{padding:36px 0}
+  .navbar-custom{padding:8px 0;}
+  .navbar-custom .navbar-brand img{height:58px}
+  .navbar-custom .play-badge{max-height:34px}
+  .navbar-custom .nav-link{padding:10px 16px; font-size:14px;}
+  .nav-language .btn{padding:8px 12px; font-size:14px;}
+}
+
+/* Ensure hero row columns match height so visual mockup can fill the right column */
+.hero .row{align-items:center;}
+.hero-visual{
+  display:flex; 
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:100%;
+}
+.hero-visual .visual-card{
+  position:relative;
+  flex:1;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,0.18);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:1rem;
+  box-sizing:border-box;
+  background:linear-gradient(135deg,#f5fff5 0%,#eafbe7 40%,#ffffff 100%);
+  border:1px solid rgba(5,37,1,0.06);
+  max-height:550px;
+  max-width:480px;
+}
+.hero-visual .visual-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  border-radius:12px;
+  box-shadow:0 16px 48px rgba(0,0,0,0.25);
+}
+@media (max-width:991px){
+  .hero-visual{display:none}
+}
+
+/* Decorative shapes inside hero visual */
+.visual-card .decor-circle{
+  position:absolute; right:-80px; top:-80px;
+  width:420px; height:420px; border-radius:50%;
+  background:radial-gradient(closest-side, rgba(75,199,20,0.20), transparent 70%);
+  pointer-events:none;
+}
+.visual-card .decor-blob{
+  position:absolute; left:-60px; bottom:-60px; width:300px; height:300px; border-radius:40% 60% 55% 45% / 55% 45% 55% 45%;
+  background:radial-gradient(closest-side, rgba(45,154,95,0.18), transparent 70%);
+  filter:blur(0.5px); pointer-events:none;
+}
+
+/* Trust chips over the mockup */
+.visual-card .chip{
+  position:absolute; display:inline-flex; align-items:center; gap:8px;
+  background:#fff; color:#052501; border:1px solid rgba(5,37,1,0.08);
+  padding:8px 12px; border-radius:999px; font-weight:700; font-size:0.95rem;
+  box-shadow:0 10px 30px rgba(0,0,0,0.12); z-index:2;
+}
+.visual-card .chip svg{display:block}
+.visual-card .chip-downloads{ top:64px; left:14px; animation:chipFloatA 6s ease-in-out infinite; }
+.visual-card .chip-rating{ bottom:14px; left:14px; animation:chipFloatB 7s ease-in-out infinite; }
+.visual-card .chip-secure{ bottom:14px; right:14px; animation:chipFloatA 8s ease-in-out infinite; }
+
+@keyframes chipFloatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes chipFloatB{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+
+/* Overline label above mockup */
+.visual-card .hero-overline{
+  position:absolute; top:10px; left:50%; transform:translateX(-50%);
+  background:#ffffff; color:#052501; border:1px solid rgba(5,37,1,0.08);
+  padding:8px 16px; border-radius:999px; display:inline-flex; align-items:center; gap:8px;
+  font-weight:700; font-size:.98rem; box-shadow:0 10px 24px rgba(0,0,0,.12); z-index:3;
+  white-space:nowrap;
+}
+.visual-card .hero-overline svg{display:block}
+
+/* Action cards in hero (Buy / Sell / Rent) */
+.action-cards .action-card{background:#fff; border-radius:12px; border:1px solid rgba(2,2,2,0.04);}
+.action-card .action-icon{font-size:28px; background:linear-gradient(90deg,var(--accent),#2eba4a); color:#fff; width:56px; height:56px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; margin:0 auto}
+.action-card h5{margin-top:10px; margin-bottom:6px; font-weight:700}
+.action-card p{margin-bottom:10px}
+@media (max-width:767px){
+  .action-cards .col-md-4{margin-bottom:12px}
+  .action-card .action-icon{width:48px; height:48px; font-size:22px}
+}
+
+/* Ensure the three action tiles are equal height and buttons align */
+.action-cards .row{align-items:stretch}
+.action-cards .col-md-4{display:flex; padding-bottom:0}
+.action-cards .action-card{flex:1; display:flex; flex-direction:column; justify-content:space-between; padding:22px; min-height:320px}
+.action-card .content{flex:1}
+
+/* Improve SVG icon clarity and sizing */
+.action-card .action-icon svg{width:30px; height:30px; display:block; fill:currentColor}
+.action-card .action-icon{width:64px; height:64px}
+
+/* Normalize buttons across cards */
+.action-card .btn{min-height:44px; padding:10px 16px; font-size:15px; border-radius:8px; box-shadow:none}
+.action-card .btn.btn-sm{min-height:40px}
+
+/* Make all hero action buttons use the primary accent for visual consistency */
+.action-card .btn{background:var(--accent); color:#fff; border:0}
+.action-card .btn:hover{filter:brightness(.95); transform:translateY(-1px)}
+
+/* Ensure outline variant also uses accent for consistency */
+.action-card .btn-outline-primary{background:var(--accent); color:#fff; border:0}
+.action-card .btn-outline-primary:hover{opacity:0.95}
+
+.action-card .btn-secondary{background:var(--accent); color:#fff; border:0}
+
+/* Slight shadow and consistent spacing */
+.action-cards .action-card{box-shadow:0 8px 30px rgba(10,10,10,0.03)}
+
+@media (max-width:767px){
+  .action-cards .action-card{min-height:0; padding:16px}
+}
+
+/* Flag icon styling */
+.flag-icon{width:28px; height:18px; display:inline-block; vertical-align:middle}
+.flag-icon svg{width:28px; height:18px; display:block}
+
+/* Adjust tile min-height for medium and small screens */
+@media (max-width:991px){
+  .action-cards .action-card{min-height:240px}
+}
+@media (max-width:576px){
+  .action-cards .action-card{min-height:0;padding:14px}
+  .action-card .action-icon{width:56px;height:56px}
+  .flag-icon{width:24px;height:16px}
+}
+
+/* Language dropdown & flag badge */
+.nav-language .btn{
+  border-radius:6px; 
+  padding:8px 14px; 
+  background:rgba(255,255,255,0.1); 
+  border:1px solid rgba(255,255,255,0.2); 
+  color:#fff;
+  font-weight:500;
+  transition: all 0.3s ease;
+}
+.nav-language .btn:hover{
+  background:rgba(255,255,255,0.15);
+  border-color:rgba(255,255,255,0.3);
+  transform: translateY(-2px);
+}
+.nav-language .dropdown-menu{
+  min-width:180px; 
+  padding:8px;
+  border-radius:8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  border:none;
+}
+.nav-language .dropdown-item{
+  display:flex; 
+  align-items:center; 
+  gap:10px; 
+  font-weight:500;
+  padding:10px 12px;
+  border-radius:6px;
+  transition: all 0.2s ease;
+}
+.nav-language .dropdown-item.active{
+  background:rgba(75,199,20,0.1);
+  color:var(--accent);
+}
+.flag-badge{display:inline-block; min-width:30px; text-align:center; font-size:12px; padding:4px 6px; border-radius:4px; background:rgba(255,255,255,0.08); color:#fff}
+
+/* Action cards — prominence boost */
+.action-cards{margin-top:8px}
+.action-cards .action-card{
+  background:#fff;
+  border:1px solid rgba(5,37,1,0.08);
+  border-radius:16px;
+  padding:28px;
+  box-shadow:0 14px 40px rgba(5,37,1,0.08);
+  transition:box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+}
+.action-cards .action-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 56px rgba(5,37,1,0.12);
+  border-color:rgba(5,37,1,0.18);
+}
+.action-card .action-icon{background:linear-gradient(90deg,var(--accent),#2eba4a); color:#fff; width:72px; height:72px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; margin:0 auto 6px}
+.action-card .action-icon svg{width:34px; height:34px; display:block}
+.action-card h5{font-size:1.15rem; font-weight:700}
+.action-card p.small{color:#5b6b61; line-height:1.6}
+.action-card .btn{margin-top:10px; padding:12px 20px; font-size:16px; border-radius:12px; box-shadow:0 10px 22px rgba(75,199,20,0.25)}
+@media(min-width:768px){
+  .action-cards .action-card{min-height:340px}
+  .action-card p.small{min-height:96px}
+}
+
+/* Dropdown item hover */
+.nav-language .dropdown-item:hover{
+  background:rgba(75,199,20,0.08);
+  transform: translateX(4px);
+}
+
+/* About section modern redesign */
+.about-card {
+  background: linear-gradient(120deg,#f8fff8 80%,#eafbe7 100%);
+  box-shadow: 0 8px 32px rgba(10,40,10,0.07);
+  border-radius: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: 2.5rem 3.5rem;
+}
+.about-content {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  margin-right: 2.5rem;
+}
+.about-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--brand);
+  letter-spacing: -1px;
+}
+.about-title .text-success {
+  color: var(--accent)!important;
+}
+.about-lead {
+  font-size: 1.18rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+.about-list {
+  font-size: 1.05rem;
+  color: #222;
+  margin-bottom: 1.2rem;
+}
+.about-list-icon {
+  color: var(--accent);
+  font-size: 1.2em;
+  margin-right: 7px;
+}
+.about-btn {
+  font-size: 1.08rem;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(76,199,20,0.08);
+  transition: box-shadow .18s, transform .18s;
+}
+.about-btn:hover {
+  box-shadow: 0 4px 18px rgba(76,199,20,0.13);
+  transform: translateY(-2px) scale(1.03);
+}
+.about-img {
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(10,40,10,0.09);
+  border: 6px solid #eafbe7;
+  background: #fff;
+  max-height: 340px;
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .about-card { flex-direction: column; padding: 2rem 1rem; max-width: 100vw; margin-left: 0; margin-right: 0; }
+  .about-content, .about-image { width: 100%; max-width: 100%; }
+  .about-img { max-height: 260px; }
+}
+@media (max-width: 576px) {
+  .about-card { padding: 1.2rem 0.5rem; max-width: 100vw; margin-left: 0; margin-right: 0; }
+  .about-title { font-size: 1.4rem; }
+  .about-lead { font-size: 1rem; }
+  .about-img { max-height: 180px; }
+}
+
+/* Download CTA Section */
+.download-cta{background:#0b3a12;color:#fff;position:relative;overflow:hidden;padding:4.5rem 0;margin-top:2.5rem}
+.download-cta:before,.download-cta:after{content:"";position:absolute;border-radius:50%;filter:blur(30px);opacity:.08}
+.download-cta:before{width:420px;height:420px;background:radial-gradient(closest-side,#4bc714,transparent 70%);left:-150px;top:-120px}
+.download-cta:after{width:520px;height:520px;background:radial-gradient(closest-side,#2d9a5f,transparent 70%);right:-200px;bottom:-220px}
+
+.download-title{font-weight:800;line-height:1.15;letter-spacing:-.02em;font-size:clamp(1.75rem,2.2vw+1rem,2.75rem);margin-bottom:.75rem;color:#fff}
+.download-sub{color:rgba(255,255,255,.88);font-size:clamp(1rem,.5vw+1rem,1.15rem);margin-bottom:1rem}
+
+.download-points{list-style:none;margin:1rem 0 1.75rem;padding:0;display:flex;flex-wrap:wrap;gap:.6rem 1rem}
+.download-points li{position:relative;padding:.45rem .85rem .45rem 2rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;color:#eafbe7;font-weight:600}
+.download-points li:before{content:"✔";position:absolute;left:.7rem;top:50%;transform:translateY(-50%);font-size:.95rem;color:#4bc714}
+
+.store-badges{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.download-cta .play-badge{height:54px;width:auto;display:block}
+.assurance{color:rgba(255,255,255,.72);font-size:.95rem}
+
+.download-visual{display:flex;justify-content:center}
+.visual-card{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.06));backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.22);border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.35);padding:1rem;max-width:360px;margin:0 auto;animation:floatY 6s ease-in-out infinite}
+.visual-card img{border-radius:12px;display:block}
+
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+@media (max-width: 575.98px){
+  .download-cta{padding:3rem 0}
+  .download-cta .play-badge{height:48px}
+  .assurance{font-size:.9rem}
+}
+
+/* Footer social icons */
+.footer .footer-social{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:8px}
+.footer .footer-social a{color:#fff;background:rgba(255,255,255,.08);width:40px;height:40px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.15);transition:all .2s ease;line-height:1;text-align:center;box-sizing:border-box}
+.footer .footer-social a i{display:block;line-height:1;font-size:19px;font-weight:normal}
+.footer .footer-social a:hover{color:#4bc714;background:rgba(255,255,255,.12)}
+.footer .footer-social .handle{color:#dfe9e2;font-weight:700;margin-left:4px}
+
+/* Compact Download CTA (above footer) */
+/* Footer app download styles */
+.footer .app-download .play-badge{height:54px;width:auto;display:block}
+.footer .app-download .store-badge{display:inline-block}
+@media (max-width:575.98px){
+  .footer .app-download{margin-top:12px;}
+  .footer .app-download .play-badge{height:48px}
+}

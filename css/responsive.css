@@ -225,13 +225,14 @@ background: transparent;
 }
     .mean-container .mean-bar {margin-bottom: -1px;border-radius: 5px; background:#052501;}
    .ggg {display: none;}
-    .header { padding-bottom: 0; padding-top: 30px;}
+        /* make header more compact on very small screens */
+        .header { padding-bottom: 8px; padding-top: 8px; }
     .last {display: none;}
     .img-box {display: none;} 
     .search {display: none;}
 .location_icon_bottum_tt {display: none;}
 .logo {float: inherit; padding-bottom: 15px; text-align: left; margin-top: -16px;}
-.logo img {width: 60%; height: 60%;}
+.logo img {width: 40%; max-width: 140px; height: auto;}
 .carousel-indicators {margin-bottom: -50px;}
 .carousel-indicators li {width: 10px; height: 10px;}
 
@@ -273,4 +274,55 @@ margin-right: 9px;
 ul.link li {padding: 8px 9px; padding-bottom: 0px; }
 
 
+}
+
+/* mobile overrides to make the play badge and header compact */
+@media (max-width: 575px) {
+        .mean-container .mean-bar { border-radius: 0 !important; }
+        .location_icon_bottum { padding: 6px 8px !important; margin-left: 8px !important; width: calc(100% - 16px) !important; }
+        .header-badge img.play-badge { max-height: 36px; }
+}
+
+/* Override: ensure contact/header badge remains visible on small screens
+   Responsive originally hid `.location_icon_bottum_tt` at certain breakpoints.
+   We want the contact bar and the play badge to remain visible and right-aligned. */
+@media (max-width: 767px) {
+    .location_icon_bottum_tt {
+        display: flex !important;
+        align-items: center;
+        gap: 8px;
+    }
+    .location_icon_bottum_tt ul {
+        display: flex !important;
+        margin: 0;
+        padding: 0;
+        gap: 8px;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+    .header-badge { display: inline-block !important; margin-left: auto; }
+}
+
+/* Emergency override: ensure the redesigned navbar/header and logo are visible on small screens
+   Some legacy responsive rules or plugins may hide the header or logo; force them visible here. */
+@media (max-width: 767px) {
+    header, nav.navbar, .navbar-custom {
+        display: block !important;
+        visibility: visible !important;
+        z-index: 9999 !important;
+    }
+    .navbar-toggler {
+        display: block !important;
+    }
+    .navbar-brand, .navbar-brand img, .logo, .logo img {
+        display: inline-block !important;
+        visibility: visible !important;
+        max-height: 56px;
+        height: auto;
+    }
+    /* ensure our header-badge and translate widget remain visible */
+    .header-badge, .translate-wrap, #google_translate_element {
+        display: inline-flex !important;
+        align-items: center !important;
+    }
 }
