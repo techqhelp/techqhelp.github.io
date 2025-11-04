@@ -8,25 +8,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Myhal - India's No.1 Agriculture Classified and Marketplace</title>
-    <meta name="keywords" content="Agriculture,tractor,landscape,ornamental plants, agriculture Comodities,Khaad,fertilizers,Nutrients Farming, Marketplace, Classifieds, Farmers, Agricultural Products, AI Solutions">
-    <meta name="description" content="MYHAL is India's leading agriculture classfied and marketplace app connecting farmers, buyers, and suppliers for seamless trade and better profitability. Farmers can list their products for free, connect with buyers directly, and earn fair prices without any middlemen.">
+    <title>MYHAL — India's #1 Agriculture Marketplace</title>
+    <meta name="keywords" content="Agriculture, Tractor, Landscaping, Ornamental Plants, Agriculture Commodities, Khaad, Fertilizers, Nutrients, Farming, Marketplace, Classifieds, Farmers, Agricultural Products, Animals">
+    <meta name="description" content="MYHAL is India's #1 agriculture marketplace to buy, sell and rent farm products and equipment. Post free ads, connect with verified buyers and get better prices with no middlemen.">
     <meta name="author" content="MyHAL">
     <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Myhal - India's No.1 Agriculture Classified and Marketplace">
+    <meta property="og:title" content="MYHAL — India's #1 Agriculture Marketplace">
     <meta property="og:description" content="MYHAL is India's leading agriculture classfied and marketplace app connecting farmers, buyers, and suppliers for seamless trade and better profitability. Farmers can list their products for free, connect with buyers directly, and earn fair prices without any middlemen.">
     <meta property="og:image" content="images/MyHAL.png">
     <meta property="og:url" content="https://www.myhal.in">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MyHAL">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MYHAL — India's #1 Agriculture Marketplace">
+    <meta name="twitter:description" content="MYHAL is India's leading agriculture classfied and marketplace app connecting farmers, buyers, and suppliers for seamless trade and better profitability. Farmers can list their products for free, connect with buyers directly, and earn fair prices without any middlemen.">
+    <meta name="twitter:image" content="https://www.myhal.in/images/MyHAL.png">
     <link rel="manifest" href="manifest.json">
     <meta name="google-play-app" content="app-id=com.myhal.myhal">
     <meta name="theme-color" content="#052501">
         <!-- SEO additions -->
         <link rel="canonical" href="https://www.myhal.in/">
-        <link rel="alternate" href="https://www.myhal.in/index.html" hreflang="en" />
+    <link rel="alternate" href="https://www.myhal.in/index.html" hreflang="en" />
         <link rel="alternate" href="https://www.myhal.in/hi/index.html" hreflang="hi" />
+    <link rel="alternate" href="https://www.myhal.in/" hreflang="x-default" />
         <meta name="robots" content="index, follow">
         <!-- Organization structured data -->
         <script type="application/ld+json">
@@ -36,7 +41,22 @@
             "name":"MyHAL",
             "url":"https://www.myhal.in",
             "logo":"https://www.myhal.in/images/MyHAL.png",
-            "sameAs":["https://www.facebook.com/","https://twitter.com/"]
+            "sameAs":[
+                "https://instagram.com/myhalindia",
+                "https://www.youtube.com/@myhalindia",
+                "https://facebook.com/myhalindia"
+            ]
+        }
+        </script>
+    <link rel="apple-touch-icon" href="images/MyHAL.png">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:locale:alternate" content="hi_IN">
+        <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"MyHAL",
+            "url":"https://www.myhal.in"
         }
         </script>
     <!-- bootstrap css -->
@@ -68,136 +88,176 @@
             <button id="langBannerClose" class="btn btn-sm btn-link">Dismiss</button>
         </div>
     <!-- end loader -->
-        <!-- header: modern navbar with language selector -->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/MyHAL.png" alt="MyHAL">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <!-- header: modern professional navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/MyHAL.png" alt="MyHAL">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <div class="collapse navbar-collapse" id="mainNav">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#product">Products</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonial</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                        </ul>
-                        <div class="d-flex align-items-center">
-                            <div class="text-white mr-3 d-none d-md-block">
-                                <small>hello@myhal.in</small><br/>
-                                <small>(+91)8376 883 780</small>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#product">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonial</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#footer-contact">Contact</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center ml-auto">
+                        <div class="header-contact text-white mr-3 d-none d-lg-block">
+                            <div class="contact-item">
+                                <i class="fa fa-envelope-o mr-1"></i>
+                                <a href="mailto:hello@myhal.in" class="text-white text-decoration-none">hello@myhal.in</a>
                             </div>
-                            <div class="header-badge">
-                                <a href="https://play.google.com/store/apps/details?id=com.myhal.myhal" target="_blank" rel="noopener noreferrer" aria-label="Download MYHAL on Google Play" title="Download MYHAL on Google Play">
-                                    <img class="play-badge" src="images/gplay.png" alt="Download MYHAL on Google Play">
+                            <div class="contact-item">
+                                <i class="fa fa-phone mr-1"></i>
+                                <a href="tel:+918376883780" class="text-white text-decoration-none">(+91) 8376 883 780</a>
+                            </div>
+                        </div>
+                        <div class="header-badge d-none d-md-block">
+                            <a href="https://play.google.com/store/apps/details?id=com.myhal.myhal" target="_blank" rel="noopener noreferrer" aria-label="Download MYHAL" title="Download MYHAL">
+                                <img class="play-badge" src="images/gplay.png" alt="Download MYHAL">
+                            </a>
+                        </div>
+                        <!-- visible language switcher -->
+                        <div class="nav-language dropdown ml-3">
+                            <button class="btn btn-sm btn-outline-light dropdown-toggle" id="langDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-globe mr-1"></i> Language
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+                                <a class="dropdown-item active" href="index.html" hreflang="en">
+                                    <span class="flag-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 36 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="English flag">
+                                            <rect width="36" height="20" fill="#00247d" rx="2"/>
+                                            <path d="M0 0 L36 20 M36 0 L0 20" stroke="#fff" stroke-width="3"/>
+                                            <circle cx="26" cy="6" r="2" fill="#cf142b"/>
+                                        </svg>
+                                    </span>
+                                    English
+                                </a>
+                                <a class="dropdown-item" href="hi/index.html" hreflang="hi">
+                                    <span class="flag-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 36 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Indian flag">
+                                            <rect width="36" height="20" fill="#f93"/>
+                                            <rect y="7" width="36" height="6" fill="#fff"/>
+                                            <rect y="13" width="36" height="7" fill="#138808"/>
+                                            <circle cx="18" cy="10" r="2" fill="#054187" />
+                                        </svg>
+                                    </span>
+                                    हिंदी
                                 </a>
                             </div>
-                            <div class="translate-wrap ml-3">
-                                <div id="google_translate_element"></div>
-                            </div>
-                                                        <!-- visible language switcher -->
-                                                        <div class="nav-language dropdown ml-2">
-                                                            <button class="btn btn-sm btn-outline-light dropdown-toggle" id="langDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🌐 Language</button>
-                                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
-                                                                                                                                <a class="dropdown-item" href="index.html" hreflang="en">
-                                                                                                                                    <span class="flag-icon" aria-hidden="true">
-                                                                                                                                        <!-- simple EN badge SVG (stylized) -->
-                                                                                                                                        <svg viewBox="0 0 36 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="English flag">
-                                                                                                                                            <rect width="36" height="20" fill="#00247d" rx="2"/>
-                                                                                                                                            <path d="M0 0 L36 20 M36 0 L0 20" stroke="#fff" stroke-width="3"/>
-                                                                                                                                            <circle cx="26" cy="6" r="2" fill="#cf142b"/>
-                                                                                                                                        </svg>
-                                                                                                                                    </span>
-                                                                                                                                    English
-                                                                                                                                </a>
-                                                                                                                                <a class="dropdown-item" href="hi/index.html" hreflang="hi">
-                                                                                                                                    <span class="flag-icon" aria-hidden="true">
-                                                                                                                                        <!-- simple IN flag SVG (tricolour with wheel) -->
-                                                                                                                                        <svg viewBox="0 0 36 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Indian flag">
-                                                                                                                                            <rect width="36" height="20" fill="#f93"/>
-                                                                                                                                            <rect y="7" width="36" height="6" fill="#fff"/>
-                                                                                                                                            <rect y="13" width="36" height="7" fill="#138808"/>
-                                                                                                                                            <circle cx="18" cy="10" r="2" fill="#054187" />
-                                                                                                                                        </svg>
-                                                                                                                                    </span>
-                                                                                                                                    हिंदी
-                                                                                                                                </a>
-                                                            </div>
-                                                        </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <!-- Hero section: clear headline, main actions (Buy / Sell / Rent) and app artwork -->
-        <section class="hero">
-            <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                        <h1 class="headline">Buy, Sell & Rent Agricultural Goods — All in One Trusted Marketplace</h1>
-                        <p class="sub">Connect directly with farmers, buyers and suppliers. List items, find equipment for rent, or discover fresh produce near you — fast, secure and commission-friendly.</p>
+            </div>
+        </nav>
+    </header>
 
-                        <div class="action-cards mt-4">
-                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="action-card text-center p-3">
-                                                        <div class="action-icon mb-2" aria-hidden="true">
-                                                            <!-- shopping cart SVG -->
-                                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM7.16 14l.84-2h7.45c.75 0 1.41-.41 1.75-1.03L21 4H6.21l-.94-2H1v2h2l3.6 9.59L6.25 17c-.14.25-.25.52-.25.82 0 1.1.9 2 2 2h10v-2H8.42c-.14 0-.25-.11-.25-.25l.03-.12L9.1 14h8.55c.75 0 1.41-.41 1.75-1.03L21 6H7.16z"/></svg>
-                                                        </div>
-                                                        <h5>Buy</h5>
-                                                        <p class="small text-muted">Browse produce, seeds, fertilizers and equipment from trusted sellers.</p>
-                                                        <a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.myhal.myhal" onclick="window.location='market://details?id=com.myhal.myhal'; setTimeout(function(){ window.location='https://play.google.com/store/apps/details?id=com.myhal.myhal'; },800); return false;">Buy Now</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="action-card text-center p-3">
-                                                        <div class="action-icon mb-2" aria-hidden="true">
-                                                            <!-- megaphone / announce SVG -->
-                                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 10v4h3l6 4V6L6 10H3zm13-6v12c1.66 0 3 1.34 3 3h2c0-2.76-2.24-5-5-5V4h-0z"/></svg>
-                                                        </div>
-                                                        <h5>Sell</h5>
-                                                        <p class="small text-muted">List your harvest or products easily and connect with buyers directly.</p>
-                                                        <a class="btn btn-sm btn-outline-primary" href="Agricultureclassified.html">List an Item</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="action-card text-center p-3">
-                                                        <div class="action-icon mb-2" aria-hidden="true">
-                                                            <!-- wrench / tools SVG -->
-                                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="currentColor" d="M22.7 19.3l-6.4-6.4c.4-1 .4-2.1 0-3.1L18 6l-4-4-3.8 3.8c-1 .4-2.1.4-3.1 0L2.7 7.3C1.8 8.2 1 9.6 1 11.2 1 15 4.4 18.4 8.2 18.4c1.6 0 3-0.8 3.9-1.7l4.6 4.6c.8.8 2.1.8 2.9 0l2.1-2.1c.8-0.8.8-2.1 0-2.9zM8.2 16.4c-2.4 0-4.3-1.9-4.3-4.3 0-1 .4-1.9 1-2.6l2.3 2.3c.2.2.5.3.8.3.3 0 .6-.1.8-.3l2.3 2.3c-.6.6-1.5 1-2.7 1z"/></svg>
-                                                        </div>
-                                                        <h5>Rent</h5>
-                                                        <p class="small text-muted">Find tractors, tools and equipment available for short-term rental.</p>
-                                                        <a class="btn btn-sm btn-secondary" href="Equipment.html">Find Rentals</a>
-                                                    </div>
-                                                </div>
+    <!-- Hero Section -->
+    <section class="hero py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left column: hero content -->
+                <div class="col-lg-6">
+                    <div class="hero-overline-left" role="note" aria-label="Trusted by farmers">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#2d9a5f" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 9.5-7 10-3.5-.5-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4" fill="none" stroke="#2d9a5f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Trusted by 1,200+ farmers</span>
+                    </div>
+                    <h1 class="hero-title has-underline mb-4">The most trusted marketplace for agriculture.</h1>
+                    <p class="hero-subtitle mb-4">Trade directly with verified farmers, buyers and suppliers. Post a free ad in minutes, close deals faster and earn better — no middlemen.</p>
+                    
+                    <div class="row action-cards mt-3">
+                        <div class="col-md-4">
+                            <div class="action-card text-center p-3">
+                                <div class="action-icon mb-2" aria-hidden="true">
+                                    <!-- Buy icon -->
+                                    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="#ffffff" role="img">
+                                        <path d="M12 16h40l-4 24H16z"/>
+                                        <circle cx="20" cy="46" r="3"/>
+                                        <circle cx="44" cy="46" r="3"/>
+                                    </svg>
+                                </div>
+                                <h5>Buy</h5>
+                                <p class="small text-muted">Discover verified seeds, fertilizers, livestock, tools and machinery at fair prices.</p>
+                                <a class="btn btn-sm btn-secondary" href="https://play.google.com/store/apps/details?id=com.myhal.myhal" target="_blank" rel="noopener noreferrer">Browse Listings</a>
                             </div>
                         </div>
+                        
+                        <div class="col-md-4">
+                            <div class="action-card text-center p-3">
+                                <div class="action-icon mb-2" aria-hidden="true">
+                                    <!-- Sell icon -->
+                                    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="#ffffff" role="img">
+                                        <rect x="16" y="20" width="32" height="28" rx="2"/>
+                                        <path d="M24 20v-4a8 8 0 0116 0v4"/>
+                                        <circle cx="32" cy="34" r="3"/>
+                                    </svg>
                                 </div>
-                                <!-- right-side hero visual: mockup that matches left column height on lg+ -->
-                                <div class="col-lg-6 d-none d-lg-flex" style="display:flex !important; align-items:stretch;">
-                                    <div class="hero-visual">
-                                        <div class="visual-card">
-                                            <img src="images/mockup.png" alt="MYHAL promotional mockup">
-                                        </div>
-                                    </div>
+                                <h5>Sell</h5>
+                                <p class="small text-muted">Post a free ad in minutes. Reach genuine buyers nearby and get paid fast.</p>
+                                <a class="btn btn-sm btn-primary" href="https://play.google.com/store/apps/details?id=com.myhal.myhal" target="_blank" rel="noopener noreferrer">Post a Free Ad</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="action-card text-center p-3">
+                                <div class="action-icon mb-2" aria-hidden="true">
+                                    <!-- Tractor icon -->
+                                    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="#ffffff" role="img">
+                                        <rect x="36" y="18" width="10" height="10" rx="1"/>
+                                        <rect x="41" y="14" width="2" height="6"/>
+                                        <rect x="24" y="24" width="12" height="6" rx="1"/>
+                                        <rect x="18" y="30" width="32" height="4"/>
+                                        <rect x="50" y="32" width="6" height="2"/>
+                                        <circle cx="46" cy="42" r="8"/>
+                                        <circle cx="24" cy="44" r="6"/>
+                                    </svg>
                                 </div>
+                                <h5>Rent</h5>
+                                <p class="small text-muted">Hire tractors, harvesters and farm tools on‑demand from nearby owners.</p>
+                                <a class="btn btn-sm btn-secondary" href="https://play.google.com/store/apps/details?id=com.myhal.myhal" target="_blank" rel="noopener noreferrer">Explore Rentals</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right column: hero visual -->
+                <div class="col-lg-6 d-none d-lg-flex" style="display:flex !important; align-items:stretch;">
+                    <div class="hero-visual">
+                        <div class="visual-card">
+                            <span class="decor-circle" aria-hidden="true"></span>
+                            <span class="decor-blob" aria-hidden="true"></span>
+                            <div class="hero-overline" role="note" aria-label="Available in 14 local languages">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#2d9a5f" stroke-width="2"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke="#2d9a5f" stroke-width="1.6" stroke-linecap="round"/></svg>
+                                <span>Available in 14 local languages</span>
+                            </div>
+                            <img src="images/mockup.png" alt="MYHAL promotional mockup">
+                            <div class="chip chip-rating" aria-label="App rating 4.8 out of 5">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#f6c946" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 17.3l-5.05 2.79 1-5.82L3 9.92l5.87-.85L12 3.75l3.13 5.32 5.87.85-4.95 4.35 1 5.82z"/></svg>
+                                <span>Rated 4.8/5</span>
+                            </div>
+                            <div class="chip chip-secure" aria-label="Secure and free">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 9.5-7 10-3.5-.5-7-5-7-10V6l7-3z" stroke="#2d9a5f" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="#2d9a5f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <span>Secure & Free</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!-- about -->
     <section id="about" class="about py-5">
         <div class="about-card p-4 p-md-5 d-flex flex-wrap align-items-center shadow-sm rounded-lg w-100" style="background:linear-gradient(120deg,#f8fff8 80%,#eafbe7 100%);">
             <div class="about-content px-2 px-md-4" style="flex:1; min-width:280px; max-width:600px;">
                 <h2 class="about-title mb-3">About <span class="text-success">MyHAL</span></h2>
-                <p class="about-lead mb-3">Myhal is Agriculture Classifieds & Rental Marketplace for farmers, equipment owners, and agri-businesses. Easily buy, sell, or rent farming products, tractors, machinery, seeds, livestock, and more – all in one app.</p>
+                <p class="about-lead mb-3">MYHAL is India's trusted agriculture classifieds and rental marketplace. Buy, sell or rent farm products, machinery, seeds and livestock — all in one simple app.</p>
 
                 <div class="about-features mb-4">
                     <div class="mb-2" style="font-size:1.15rem; font-weight:600; color:#4bc714;">🌱 Key Features</div>
@@ -217,85 +277,126 @@
         </div>
     </section>
     <!-- end about -->
-    <!-- for_box -->
-    <div class="for_box_bg">
+    <!-- Stats Section -->
+    <div class="stats-section-new" style="background: #0b3a12; padding: 5rem 0 4rem 0; position: relative;">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <div class="for_box text-center">
-                        <i class="stat-icon" aria-hidden="true">
-                            <!-- App Download SVG icon -->
-                            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="54" height="54" rx="12" fill="#052501"/>
-                                <path d="M27 38V16M27 38l-7-7M27 38l7-7" stroke="#4bc714" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- 
+            <div class="text-center mb-5">
+                <h2 style="color: #fff; font-size: 2.8rem; font-weight: 700; margin-bottom: 1rem;">Healthy Life with Fresh 
+                    
+            
+                </h2>
+            </div>
+            Heading -->
+            <div class="row justify-content-center g-4">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="stat-card-v2" style="background: #ffffff; border: 1px solid rgba(5,37,1,0.08); border-radius: 16px; padding: 3rem 2rem; text-align: center; transition: all 0.3s ease; box-shadow: 0 6px 22px rgba(0,0,0,0.06);">
+                        <div class="stat-icon-circle" style="width: 80px; height: 80px; background: #eafbe7; border: 1px solid rgba(43,154,95,0.18); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+                                <circle cx="20" cy="15" r="7" stroke="#2d9a5f" stroke-width="2.5" fill="none"/>
+                                <path d="M10 30c0-5.5 10-5.5 10-5.5s10 0 10 5.5" stroke="#2d9a5f" stroke-width="2.5" stroke-linecap="round"/>
                             </svg>
-                        </i>
-                        <span style="color:#4bc714;font-size:2.2rem;font-weight:700;">10000+</span>
-                        <h3 style="color:#fff;font-size:1.5rem;">App Download</h3>
+                        </div>
+                        <h3 style="color: #052501; font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem;">Active<br>Farmers</h3>
+                        <div class="stat-badge" style="display: inline-block; background: #fff; padding: 0.6rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 1.3rem; color: #4bc714;">
+                            <span class="stat-number" data-target="1200" data-suffix="+">1,200+</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <div class="for_box text-center">
-                        <i class="stat-icon" aria-hidden="true">
-                            <!-- Registered Farmers SVG icon -->
-                            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="54" height="54" rx="12" fill="#052501"/>
-                                <path d="M27 34c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z" stroke="#4bc714" stroke-width="3" fill="none"/>
-                                <path d="M19 38c0-4 8-4 8-4s8 0 8 4" stroke="#4bc714" stroke-width="2" fill="none"/>
+                
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="stat-card-v2" style="background: #ffffff; border: 1px solid rgba(5,37,1,0.08); border-radius: 16px; padding: 3rem 2rem; text-align: center; transition: all 0.3s ease; box-shadow: 0 6px 22px rgba(0,0,0,0.06);">
+                        <div class="stat-icon-circle" style="width: 80px; height: 80px; background: #eafbe7; border: 1px solid rgba(43,154,95,0.18); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                            <!-- App downloads: phone + download arrow -->
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+                                <rect x="12" y="8" width="16" height="24" rx="3" stroke="#2d9a5f" stroke-width="2.5" fill="none"/>
+                                <circle cx="20" cy="28.5" r="1.2" fill="#2d9a5f"/>
+                                <path d="M20 12v9m0 0l-4-4m4 4l4-4" stroke="#2d9a5f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                        </i>
-                        <span style="color:#4bc714;font-size:2.2rem;font-weight:700;">5000+</span>
-                        <h3 style="color:#fff;font-size:1.5rem;">Registered Farmers</h3>
+                        </div>
+                        <h3 style="color: #052501; font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem;">App<br>Downloads</h3>
+                        <div class="stat-badge" style="display: inline-block; background: #fff; padding: 0.6rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 1.3rem; color: #2d9a5f;">
+                            <span class="stat-number" data-target="5000" data-suffix="+">5,000+</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <div class="for_box text-center">
-                        <i class="stat-icon" aria-hidden="true">
-                            <!-- Categories SVG icon -->
-                            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="54" height="54" rx="12" fill="#052501"/>
-                                <path d="M16 38h22M20 34V20a2 2 0 012-2h10a2 2 0 012 2v14" stroke="#4bc714" stroke-width="3" fill="none"/>
+                
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="stat-card-v2" style="background: #ffffff; border: 1px solid rgba(5,37,1,0.08); border-radius: 16px; padding: 3rem 2rem; text-align: center; transition: all 0.3s ease; box-shadow: 0 6px 22px rgba(0,0,0,0.06);">
+                        <div class="stat-icon-circle" style="width: 80px; height: 80px; background: #eafbe7; border: 1px solid rgba(43,154,95,0.18); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                            <!-- Categories & Subcategories: 3x3 grid -->
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+                                <rect x="10" y="10" width="6" height="6" rx="1" stroke="#2d9a5f" stroke-width="2"/>
+                                <rect x="17" y="10" width="6" height="6" rx="1" stroke="#2d9a5f" stroke-width="2"/>
+                                <rect x="24" y="10" width="6" height="6" rx="1" stroke="#2d9a5f" stroke-width="2"/>
+                                <rect x="10" y="17" width="6" height="6" rx="1" stroke="#2d9a5f" stroke-width="2"/>
+                                <rect x="17" y="17" width="6" height="6" rx="1" stroke="#2d9a5f" stroke-width="2"/>
+                                <rect x="24" y="17" width="6" height="6" rx="1" stroke="#2d9a5f" stroke-width="2"/>
+                                <rect x="10" y="24" width="6" height="6" rx="1" stroke="#2d9a5f" stroke-width="2"/>
+                                <rect x="17" y="24" width="6" height="6" rx="1" stroke="#2d9a5f" stroke-width="2"/>
+                                <rect x="24" y="24" width="6" height="6" rx="1" stroke="#2d9a5f" stroke-width="2"/>
                             </svg>
-                        </i>
-                        <span style="color:#4bc714;font-size:2.2rem;font-weight:700;">50+</span>
-                        <h3 style="color:#fff;font-size:1.5rem;">Categories</h3>
+                        </div>
+                        <h3 style="color: #052501; font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem;">Categories &amp; Subcategories</h3>
+                        <div class="stat-badge" style="display: inline-block; background: #fff; padding: 0.6rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 1.3rem; color: #2d9a5f;">
+                            <span class="stat-number" data-target="525" data-suffix="+">525+</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="stat-card-v2" style="background: #ffffff; border: 1px solid rgba(5,37,1,0.08); border-radius: 16px; padding: 3rem 2rem; text-align: center; transition: all 0.3s ease; box-shadow: 0 6px 22px rgba(0,0,0,0.06);">
+                        <div class="stat-icon-circle" style="width: 80px; height: 80px; background: #eafbe7; border: 1px solid rgba(43,154,95,0.18); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                            <!-- Local Languages: globe icon -->
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+                                <circle cx="20" cy="20" r="9" stroke="#2d9a5f" stroke-width="2.5" fill="none"/>
+                                <path d="M11 20h18M20 11a14 14 0 010 18M20 11a14 14 0 000 18" stroke="#2d9a5f" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 style="color: #052501; font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem;">Local<br>Languages</h3>
+                        <div class="stat-badge" style="display: inline-block; background: #fff; padding: 0.6rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 1.3rem; color: #2d9a5f;">
+                            <span class="stat-number" data-target="13" data-suffix="+">13+</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end for_box -->
-    <!-- offer -->
-    <div class="offer">
+    <!-- end Stats Section -->
+    <!-- Download CTA -->
+    <section class="download-cta" aria-labelledby="download-title">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h2>Download <strong class="black"> MYHAL</strong></h2>
+            <div class="row align-items-center">
+                <!-- Left: copy -->
+                <div class="col-lg-7">
+                    <h2 id="download-title" class="download-title">Download the app and grow your agri-business with confidence</h2>
+                    <p class="download-sub">Join thousands of farmers, suppliers and equipment owners already using MYHAL to buy, sell and rent with ease. Safe, fast and truly local.</p>
+                    <ul class="download-points">
+                        <li>Free listing for farmers</li>
+                        <li>Direct chat with buyers</li>
+                        <li>Multi‑language support</li>
+                        <li>Trusted by the community</li>
+                    </ul>
+                    <div class="store-badges">
+                        <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.myhal.myhal" target="_blank" rel="noopener noreferrer" aria-label="Get MYHAL on Google Play" title="Get MYHAL on Google Play">
+                            <img class="play-badge" src="images/gplay.png" alt="Get it on Google Play">
+                        </a>
+                        <span class="assurance">100% Free • Secure • No commissions on search</span>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="offer-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div class="offer_box">
-                            <h3>Download the App Now and Start Your Farming Journey With Us!</h3>
-                            <p>Join the revolution in agriculture. Download MYHAL today and experience the future of farming at your fingertips.</p>
-                            
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="offer_img">
-                            <figure><a href="https://play.google.com/store/apps/details?id=com.myhal.myhal" target="_blank" rel="noopener noreferrer" aria-label="Download MYHAL on Google Play (opens in new tab)" title="Download MYHAL on Google Play"><img class="play-badge" src="images/gplay.png" alt="Download MYHAL on Google Play" /><span class="sr-only">Download MYHAL on Google Play (opens in new tab)</span></a></figure>
-                        </div>
-                    </div>
-                </div>       
-        </div>
-    </div>
 
-    <!-- end offer -->
+                <!-- Right: visual -->
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <div class="download-visual">
+                        <div class="visual-card">
+                            <img src="images/mockup.png" alt="MYHAL App preview" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Download CTA -->
 
     <!-- product  -->
     <div id="product" class="product">
@@ -304,88 +405,45 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="title">
-                            <h2>MYHAL <strong class="black">Products & Services</strong></h2>
+                            <h2>What We <b color="#4bc714">Offer</b></h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                            <div class="product_box">
-                                <figure>
-                                
-                                    <a href="Agricultureclassified.html">
-                                        <img src="images/classified.png" alt="Agriculture Classified">
-                
-                                    <h3>Agriculture Classified </h3>
-                                </a>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                            <div class="product_box">
-                                <figure>
-                                    <a href="landscape.html">
-                                    <img src="images/landscape.jpg" alt="Landscaping Supplies">
-                                    
-                                    <h3>LandScaping Supplies  </h3>
-                                </a>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                            <div class="product_box">
-                                <figure>
-                                <a href="Equipment.html">
-                                    <img src="images/agriequipment.jpg" alt="Agriculture Equipment">
-                                    <h3>Buy or Sell Agriculture Equipments </h3>
-                                </a>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                            <div class="product_box">
-                                <figure>
-                                    <a href="fertilizer.html">
-                                    <img src="images/khaad.jpg" alt="Organic Nutrients and Insecticides">
-                                
-                                    <h3>Organic Nutrients and Insecticides</h3>
-                                    </a>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                            <div class="product_box">
-                                <figure>
-                                    <a href="AIsolution.html">
-                                    <img src="images/AI.png" alt="AI Based Solution">
-                                    <h3>AI Based Solution </h3>
-                                    </a>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                            <div class="product_box">
-                                <figure>
-                                <a href="agriculturecomodities.html">
-                                    <img src="images/commodities.jpg" alt="Agriculture Comodities">
-                                    <h3>Agriculture Comodities </h3>
-                                </a>
-                                </figure>
-                                    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              
+        <div class="container">
+            <!-- Category tabs -->
+            <ul class="nav nav-pills listings-tabs justify-content-center mb-4" id="listingTabs" role="tablist">
+                <li class="nav-item" role="presentation"><a class="nav-link active" data-category="classified" href="#">Classifieds</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" data-category="landscaping" href="#">Landscaping</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" data-category="equipment" href="#">Equipment</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" data-category="nutrients" href="#">Nutrients & Insecticides</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" data-category="animal" href="#">Animals</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" data-category="commodities" href="#">Commodities</a></li>
+            </ul>
+
+            <!-- Listings grid -->
+            <div id="listingGrid" class="row"></div>
+
+            <!-- Load more + View all -->
+            <div class="text-center mt-3 d-flex justify-content-center" style="gap:12px;">
+                <button id="loadMoreBtn" class="btn btn-outline-success px-4" type="button">Load more</button>
+                <a id="viewAllLink" href="https://play.google.com/store/apps/details?id=com.myhal.myhal" target="_blank" rel="noopener noreferrer" class="btn btn-success px-4">View all</a>
             </div>
         </div>
     </div>
+
+    <!-- Rent section: Tractors available for rent -->
+    <section class="py-5" id="for-rent">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h2 style="margin:0; font-weight:800; color:#052501">Available for <span class="text-success">Rent</span></h2>
+                <a href="https://play.google.com/store/apps/details?id=com.myhal.myhal" target="_blank" rel="noopener noreferrer" class="btn btn-success">View all rentals</a>
+            </div>
+            <div id="rentGrid" class="row"></div>
+        </div>
+    </section>
    
 
      <!--end product -->
@@ -400,51 +458,7 @@
             <div id="testimonial-carousel" class="testimonial-carousel">
                 <div id="testimonial-cards-container" class="row justify-content-center">
                     <!-- Testimonial cards will be dynamically inserted here -->
-                                                                                        <div class="testimonial-card-grid shadow-sm rounded-lg p-2 h-100 position-relative" style="background:#fff; border-radius:12px; border:1px solid #eee; min-width:160px; margin:8px; display:flex; flex-direction:column; align-items:center;">
-                                                                                            <div style="height:4px; background:#4bc714; border-radius:12px 12px 0 0; position:absolute; top:0; left:0; right:0;"></div>
-                                                                                            <img src='images/user1.png' alt='सुरेश चौहान' style="width:48px; height:48px; border-radius:50%; box-shadow:0 2px 8px rgba(76,199,20,0.13); border:3px solid #fff; margin-top:1.2rem; margin-bottom:0.6rem;" />
-                                                                                            <div style="font-weight:700; font-size:1rem; color:#052501; text-align:center;">सुरेश चौहान</div>
-                                                                                            <div style="color:#4bc714; font-size:0.9rem; font-weight:600; text-align:center; margin-bottom:0.6rem;">झांसी, उत्तर प्रदेश</div>
-                                                                                            <div class="testimonial-quote-grid mb-2" style="font-size:0.95rem; color:#222; font-style:italic; text-align:center; background:#eafbe7; border-radius:10px; padding:1rem 0.7rem; margin-top:0.2rem;">“पहले हमें फसल बेचने के लिए बिचौलियों पर निर्भर रहना पड़ता था। कभी दाम कम मिलते थे, तो कभी भुगतान महीनों बाद आता था। MYHAL से जुड़ने के बाद मैंने अपनी फसल सीधे किसानों और खरीदारों को बेची। दाम अच्छा मिला, पैसा तुरंत खाते में आया और सबसे बड़ी बात — भरोसा बना। अब लगता है कि किसान भी डिजिटल दुनिया में आगे बढ़ सकते हैं।”</div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class='col-lg-2 col-md-4 col-sm-6 mb-3'>
-                                                                                        <div class="testimonial-card-grid shadow-sm rounded-lg p-2 h-100 position-relative" style="background:#fff; border-radius:12px; border:1px solid #eee; min-width:160px; margin:8px; display:flex; flex-direction:column; align-items:center;">
-                                                                                            <div style="height:4px; background:#4bc714; border-radius:12px 12px 0 0; position:absolute; top:0; left:0; right:0;"></div>
-                                                                                            <img src='images/user2.png' alt='সুকুমার দত্ত' style="width:48px; height:48px; border-radius:50%; box-shadow:0 2px 8px rgba(76,199,20,0.13); border:3px solid #fff; margin-top:1.2rem; margin-bottom:0.6rem;" />
-                                                                                            <div style="font-weight:700; font-size:1rem; color:#052501; text-align:center;">সুকুমার দত্ত</div>
-                                                                                            <div style="color:#4bc714; font-size:0.9rem; font-weight:600; text-align:center; margin-bottom:0.6rem;">নদীয়া, পশ্চিমবঙ্গ</div>
-                                                                                            <div class="testimonial-quote-grid mb-2" style="font-size:0.95rem; color:#222; font-style:italic; text-align:center; background:#eafbe7; border-radius:10px; padding:1rem 0.7rem; margin-top:0.2rem;">“আগে আমি আমার ফসল বিক্রি করতে অনেক কষ্ট পেতাম। দালালরা দাম কমিয়ে দিত আর পেমেন্ট দিতে দেরি করত। MYHAL-এ আমার পণ্য আপলোড করার পর অনেক ক্রেতা আমার সঙ্গে যোগাযোগ করল। আমি আমার আমের ফসল খুব ভালো দামে বিক্রি করেছি। এখন আমি প্রতিবার ফসল তোলার পর MYHAL ব্যবহার করি — এটা আমার নিজের বাজার।”</div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class='col-lg-2 col-md-4 col-sm-6 mb-3'>
-                                                                                        <div class="testimonial-card-grid shadow-sm rounded-lg p-2 h-100 position-relative" style="background:#fff; border-radius:12px; border:1px solid #eee; min-width:160px; margin:8px; display:flex; flex-direction:column; align-items:center;">
-                                                                                            <div style="height:4px; background:#4bc714; border-radius:12px 12px 0 0; position:absolute; top:0; left:0; right:0;"></div>
-                                                                                            <img src='images/user3.png' alt='ಬಸವರಾಜ ಪಾಟೀಲ' style="width:48px; height:48px; border-radius:50%; box-shadow:0 2px 8px rgba(76,199,20,0.13); border:3px solid #fff; margin-top:1.2rem; margin-bottom:0.6rem;" />
-                                                                                            <div style="font-weight:700; font-size:1rem; color:#052501; text-align:center;">ಬಸವರಾಜ ಪಾಟೀಲ</div>
-                                                                                            <div style="color:#4bc714; font-size:0.9rem; font-weight:600; text-align:center; margin-bottom:0.6rem;">ಬಿಜಾಪುರ, ಕರ್ನಾಟಕ</div>
-                                                                                            <div class="testimonial-quote-grid mb-2" style="font-size:0.95rem; color:#222; font-style:italic; text-align:center; background:#eafbe7; border-radius:10px; padding:1rem 0.7rem; margin-top:0.2rem;">“ಹಿಂದೆ ನಾನು ಬೆಳೆ ಮಾರಾಟಕ್ಕೆ ವ್ಯಾಪಾರಿಗಳ ಮೇಲೆ ಅವಲಂಬಿತರಾಗಿದ್ದೆ. ಆದರೆ MYHAL ಮೂಲಕ ನಾನು ನನ್ನ ಈರುಳ್ಳಿ ನೇರವಾಗಿ ಖರೀದಿದಾರರಿಗೆ ಮಾರಾಟ ಮಾಡಿದೆ. ನನ್ನ ಬೆಳೆಗೆ ಉತ್ತಮ ಬೆಲೆ ಸಿಕ್ಕಿತು, ಪಾವತಿಗಳು ತಕ್ಷಣ ಬಂದವು. ಈಗ ನನ್ನ ಹಳ್ಳಿಯ ಇತರ ರೈತರೂ MYHAL ಬಳಕೆ ಮಾಡುತ್ತಿದ್ದಾರೆ, ಏಕೆಂದರೆ ಇದು ನಿಜವಾದ ರೈತರ ವೇದಿಕೆ.”</div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class='col-lg-2 col-md-4 col-sm-6 mb-3'>
-                                                                                        <div class="testimonial-card-grid shadow-sm rounded-lg p-2 h-100 position-relative" style="background:#fff; border-radius:12px; border:1px solid #eee; min-width:160px; margin:8px; display:flex; flex-direction:column; align-items:center;">
-                                                                                            <div style="height:4px; background:#4bc714; border-radius:12px 12px 0 0; position:absolute; top:0; left:0; right:0;"></div>
-                                                                                            <img src='images/user1.png' alt='వెంకటేష్ రావు' style="width:48px; height:48px; border-radius:50%; box-shadow:0 2px 8px rgba(76,199,20,0.13); border:3px solid #fff; margin-top:1.2rem; margin-bottom:0.6rem;" />
-                                                                                            <div style="font-weight:700; font-size:1rem; color:#052501; text-align:center;">వెంకటేష్ రావు</div>
-                                                                                            <div style="color:#4bc714; font-size:0.9rem; font-weight:600; text-align:center; margin-bottom:0.6rem;">గుంటూరు, ఆంధ్రప్రదేశ్</div>
-                                                                                            <div class="testimonial-quote-grid mb-2" style="font-size:0.95rem; color:#222; font-style:italic; text-align:center; background:#eafbe7; border-radius:10px; padding:1rem 0.7rem; margin-top:0.2rem;">“MYHAL వాడకానికి ముందు నేను మధ్యవర్తుల మీద ఆధారపడి ఉండేవాడిని. ఇప్పుడు నేను నా పంటను యాప్‌లో అప్‌లోడ్ చేస్తాను, కొనుగోలుదారులు నేరుగా సంప్రదిస్తారు. ఈ సారి నేను నా మిరప పంటను మంచి రేటుకి అమ్మగలిగాను. డబ్బు కూడా అదే రోజున బ్యాంక్‌లోకి వచ్చింది. ఇది నిజంగా రైతులకు ఉపయోగపడే యాప్.”</div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class='col-lg-2 col-md-4 col-sm-6 mb-3'>
-                                                                                        <div class="testimonial-card-grid shadow-sm rounded-lg p-2 h-100 position-relative" style="background:#fff; border-radius:12px; border:1px solid #eee; min-width:160px; margin:8px; display:flex; flex-direction:column; align-items:center;">
-                                                                                            <div style="height:4px; background:#4bc714; border-radius:12px 12px 0 0; position:absolute; top:0; left:0; right:0;"></div>
-                                                                                            <img src='images/user2.png' alt='முருகேசன்' style="width:48px; height:48px; border-radius:50%; box-shadow:0 2px 8px rgba(76,199,20,0.13); border:3px solid #fff; margin-top:1.2rem; margin-bottom:0.6rem;" />
-                                                                                            <div style="font-weight:700; font-size:1rem; color:#052501; text-align:center;">முருகேசன்</div>
-                                                                                            <div style="color:#4bc714; font-size:0.9rem; font-weight:600; text-align:center; margin-bottom:0.6rem;">சேலம், தமிழ்நாடு</div>
-                                                                                            <div class="testimonial-quote-grid mb-2" style="font-size:0.95rem; color:#222; font-style:italic; text-align:center; background:#eafbe7; border-radius:10px; padding:1rem 0.7rem; margin-top:0.2rem;">“முந்தைய காலங்களில் நாங்கள் விளைபொருட்களை விற்க பல இடங்களுக்கும் போயிருக்க வேண்டும். ஆனால் MYHAL மூலம், நான் என் காய்கறிகளை நேரடியாக விற்றேன். சிறந்த விலை கிடைத்தது, உடனடி பணம் வந்தது. இது நம்மைப் போன்ற சிறு விவசாயிகளுக்குப் பெரிய ஆதரவாக இருக்கிறது. இதனால் நம்பிக்கை வந்தது — நாமும் தொழில்நுட்பத்துடன் முன்னேறலாம்.”</div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
+                </div>
                 <div class="d-flex justify-content-between align-items-center mt-4">
                     <button id="testimonial-prev" class="btn btn-success px-4 py-2" aria-label="Previous testimonial">&#8592; Prev</button>
                     <div id="testimonial-dots" style="display:flex; gap:6px;"></div>
@@ -453,43 +467,200 @@
             </div>
         </div>
         <script>
+        // Coordinates map for distance calculation (approximate)
+    const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.myhal.myhal';
+        const COORDS = {
+            Delhi: {lat:28.6139, lon:77.2090},
+            Pilana:{lat:28.93, lon:77.24}, Jaipur:{lat:26.9124, lon:75.7873}, Hardoi:{lat:27.3943, lon:80.1317}, Hisar:{lat:29.1492, lon:75.7217},
+            Nashik:{lat:19.9975, lon:73.7898}, Anand:{lat:22.5645, lon:72.9289}, Bharatpur:{lat:27.2152, lon:77.5011}, Pune:{lat:18.5204, lon:73.8567},
+            Gurgaon:{lat:28.4595, lon:77.0266}, Bengaluru:{lat:12.9716, lon:77.5946}, Hyderabad:{lat:17.3850, lon:78.4867}, Ahmedabad:{lat:23.0225, lon:72.5714},
+            Indore:{lat:22.7196, lon:75.8577}, Nagpur:{lat:21.1458, lon:79.0882}, Lucknow:{lat:26.8467, lon:80.9462}, Gaya:{lat:24.7955, lon:85.0002},
+            Madurai:{lat:9.9252, lon:78.1198}, 'Sri Ganganagar':{lat:29.9038, lon:73.8772}, Kolhapur:{lat:16.7049, lon:74.2433}, Patiala:{lat:30.3398, lon:76.3869},
+            Rewa:{lat:24.5362, lon:81.3039}, Aurangabad:{lat:19.8762, lon:75.3433}, Rajkot:{lat:22.3039, lon:70.8022}, Hooghly:{lat:22.8960, lon:88.2461},
+            Nellore:{lat:14.4426, lon:79.9865}, Kota:{lat:25.2138, lon:75.8648}, Ujjain:{lat:23.1765, lon:75.7885}, Latur:{lat:18.4088, lon:76.5604},
+            Agra:{lat:27.1767, lon:78.0081}, Karnal:{lat:29.6857, lon:76.9905}
+        };
+
+        function cityFromLocation(loc){
+            if(!loc) return null;
+            return (loc.split(',')[0] || loc).replace(/\s*Mandi$/i,'').trim();
+        }
+        function haversineKm(a,b){
+            const R=6371; // km
+            const dLat=(b.lat-a.lat)*Math.PI/180; const dLon=(b.lon-a.lon)*Math.PI/180;
+            const lat1=a.lat*Math.PI/180, lat2=b.lat*Math.PI/180;
+            const x=Math.sin(dLat/2)**2 + Math.cos(lat1)*Math.cos(lat2)*Math.sin(dLon/2)**2;
+            return 2*R*Math.asin(Math.sqrt(x));
+        }
+        function distanceFromDelhiString(loc){
+            const city=cityFromLocation(loc); if(!city || !COORDS[city]) return '';
+            const km=haversineKm(COORDS.Delhi, COORDS[city]);
+            return `${km.toFixed(1)} km away`;
+        }
+
+        // Featured listings data (static demo). Replace with real data feed when available.
+        const LISTINGS = {
+            classified: [
+                { title: 'Anthurium white Aristo', price: '₹150', priceLabel:'Price Per Unit:', type:'Sell', views:25, distance:'26.1 km away', location: 'Pilana', img: 'https://im.myhal.in/listings/1753875784060-0.jpg', link: 'Agricultureclassified.html' },
+                { title: 'Fresh Wheat (50 kg)', price: '₹1,350', priceLabel:'Price Per Quintal:', type:'Sell', views:64, distance:'18.4 km away', location: 'Jaipur, RJ', img: 'https://im.myhal.in/website/wheat.jpg', link: 'Agricultureclassified.html' },
+                { title: 'Desi Ghee (1 kg)', price: '₹600', priceLabel:'Price Per Unit:', type:'Sell', views:42, distance:'12.3 km away', location: 'Hardoi, UP', img: 'https://im.myhal.in/website/Desi.jpeg', link: 'Agricultureclassified.html' },
+                { title: 'Buffalo Calf', price: '₹28,000', priceLabel:'Price:', type:'Sell', views:31, distance:'32.8 km away', location: 'Hisar, HR', img: 'https://im.myhal.in/website/buffalocalf.jpg', link: 'Agricultureclassified.html' },
+                { title: 'Hybrid Tomato (crate)', price: '₹950', priceLabel:'Per Crate:', type:'Sell', views:19, distance:'9.6 km away', location: 'Nashik, MH', img: 'https://im.myhal.in/website/HybridTomato.jpg', link: 'Agricultureclassified.html' },
+                { title: 'Groundnut (100 kg)', price: '₹7,800', priceLabel:'Per 100 kg:', type:'Sell', views:27, distance:'22.5 km away', location: 'Anand, GJ', img: 'https://im.myhal.in/website/groundnut.jpg', link: 'Agricultureclassified.html' }
+            ],
+            landscaping: [
+                { title: 'Areca Palm (5 ft)', price: '₹850', priceLabel:'Per Plant:', type:'Sell', views:12, distance:'5.1 km away', location: 'Pune, MH', img: 'https://im.myhal.in/palm/ArecaPalm_1_11zon.jpg', link: 'landscape.html' },
+                { title: 'Rainbow Tree', price: '₹1,200', priceLabel:'Per Plant:', type:'Sell', views:9, distance:'11.4 km away', location: 'Gurgaon, HR', img: 'https://im.myhal.in/imported/EucalyptusDelgupta_9_11zon.jpg', link: 'landscape.html' },
+                { title: 'Ficus Panda', price: '₹950', priceLabel:'Per Plant:', type:'Sell', views:21, distance:'7.8 km away', location: 'Bengaluru, KA', img: 'https://im.myhal.in/ficus/FicusPanda_8_11zon.jpg', link: 'landscape.html' },
+                { title: 'Earth Auger', price: '₹6,500', priceLabel:'Price:', type:'Sell', views:15, distance:'15.0 km away', location: 'Hyderabad, TS', img: 'https://im.myhal.in/appicon/EarthAugermin.jpg', link: 'landscape.html' },
+                { title: 'Chinese Fan Palm', price: '₹1,500', priceLabel:'Per Plant:', type:'Sell', views:8, distance:'21.2 km away', location: 'Ahmedabad, GJ', img: 'https://im.myhal.in/palm/ChineseFanPalm_5_11zon.jpg', link: 'landscape.html' },
+                { title: 'Dragon Tree', price: '₹2,200', priceLabel:'Per Plant:', type:'Sell', views:10, distance:'14.3 km away', location: 'Indore, MP', img: 'https://im.myhal.in/imported/DragonTree_8_11zon.jpg', link: 'landscape.html' }
+            ],
+            equipment: [
+                { title: 'Tractor (45 HP) for rent', price: '₹850/hr', priceLabel:'Rent:', type:'Rent', views:44, distance:'8.2 km away', location: 'Nagpur, MH', img: 'https://im.myhal.in/FarmMachinery/Tractors.jpg', link: 'Equipment.html' },
+                { title: 'Rotavator 6 ft', price: '₹58,000', priceLabel:'Price:', type:'Sell', views:17, distance:'19.6 km away', location: 'Lucknow, UP', img: 'https://im.myhal.in/FarmMachinery/Rotavator.jpg', link: 'Equipment.html' },
+                { title: 'Sprayer 16L Battery', price: '₹2,150', priceLabel:'Price:', type:'Sell', views:23, distance:'6.4 km away', location: 'Gaya, BR', img: 'https://im.myhal.in/FarmMachinery/Sprayer.jpg', link: 'Equipment.html' },
+                { title: 'Power Tiller (second-hand)', price: '₹42,000', priceLabel:'Price:', type:'Sell', views:12, distance:'27.3 km away', location: 'Madurai, TN', img: 'https://im.myhal.in/FarmMachinery/Tiller.jpg', link: 'Equipment.html' },
+                { title: 'Computer Leveler', price: '₹9,500', priceLabel:'Price:', type:'Sell', views:9, distance:'24.8 km away', location: 'Sri Ganganagar, RJ', img: 'https://im.myhal.in/FarmMachinery/ComputerLandLeveler.jpg', link: 'Equipment.html' },
+                { title: 'Trailer (7x4)', price: '₹68,000', priceLabel:'Price:', type:'Sell', views:11, distance:'12.9 km away', location: 'Kolhapur, MH', img: 'https://im.myhal.in/FarmMachinery/TractorTrolleyandTipper.jpg', link: 'Equipment.html' }
+            ],
+            nutrients: [
+                { title: 'Press Mud (1 ton)', price: '₹1,600', priceLabel:'Per Ton:', type:'Sell', views:33, location: 'Rajkot, GJ', img: 'https://im.myhal.in/organiccompost/Sugarcanepressmud_6_11zon.jpg', link: 'fertilizer.html' },
+                { title: 'Vermi Compost (50 kg)', price: '₹350', priceLabel:'Per Bag:', type:'Sell', views:41, location: 'Patiala, PB', img: 'https://im.myhal.in/organiccompost/VermiCompost_7_11zon.jpg', link: 'fertilizer.html' },
+                { title: 'Cow Dung Manure (50 kg)', price: '₹220', priceLabel:'Per Bag:', type:'Sell', views:29, location: 'Aurangabad, MH', img: 'https://im.myhal.in/Machinary/gobarkakhaad.jpg', link: 'fertilizer.html' },
+                { title: 'Poultry Farm Manure (25 kg)', price: '₹180', priceLabel:'Per Bag:', type:'Sell', views:24, location: 'Nellore, AP', img: 'https://im.myhal.in/organiccompost/PoultryFarmManure_4_11zon.jpg', link: 'fertilizer.html' },
+                { title: 'Vermi Compost (Bulk 1 ton)', price: '₹9,500', priceLabel:'Per Ton:', type:'Sell', views:22, location: 'Rewa, MP', img: 'https://im.myhal.in/organiccompost/VermiCompost_7_11zon.jpg', link: 'fertilizer.html' },
+                { title: 'Goat Farm Manure (25 kg)', price: '₹240', priceLabel:'Per Bag:', type:'Sell', views:26, location: 'Hooghly, WB', img: 'https://im.myhal.in/organiccompost/GoatFarmManure_3_11zon.jpg', link: 'fertilizer.html' }
+            ],
+            animal: [
+                { title: 'HF Cow (Milking)', price: '₹62,000', priceLabel:'Price:', type:'Sell', views:33, location: 'Karnal, HR', img: 'https://im.myhal.in/website/Pure-Breed-HF-Cow..jpg', link: 'Agricultureclassified.html' },
+                { title: 'Murrah Buffalo (Heifer)', price: '₹85,000', priceLabel:'Price:', type:'Sell', views:28, location: 'Hisar, HR', img: 'https://im.myhal.in/website/Black-Murrah-Buffalo..jpg', link: 'Agricultureclassified.html' },
+                { title: 'Sirohi Goat (Pair)', price: '₹12,500', priceLabel:'Price:', type:'Sell', views:22, location: 'Jaipur, RJ', img: 'https://im.myhal.in/website/sirohi-goat.jpg', link: 'Agricultureclassified.html' },
+                { title: 'German Shepherd', price: '₹1,900', priceLabel:'Price:', type:'Sell', views:19, location: 'Indore, MP', img: 'https://im.myhal.in/website/German_Shepherd.jpg', link: 'Agricultureclassified.html' },
+                { title: 'Rathi Cow (Pregnant)', price: '₹68,000', priceLabel:'Price:', type:'Sell', views:16, location: 'Bikaner, RJ', img: 'https://im.myhal.in/website/RathiCow.jpg', link: 'Agricultureclassified.html' },
+                { title: 'Jersey Cow (Milking)', price: '₹58,000', priceLabel:'Price:', type:'Sell', views:21, location: 'Pune, MH', img: 'https://im.myhal.in/website/Pure-Breed-Jersey-Cow.jpg', link: 'Agricultureclassified.html' }
+            ],
+            commodities: [
+                { title: 'Wheat (100 kg)', price: '₹2,900', priceLabel:'Market Price:', type:'Commodity', views:62, distance:'Karnal Mandi', location: 'Karnal, HR', img: 'https://im.myhal.in/commodites/Wheat_16_11zon.jpg', link: 'agriculturecomodities.html' },
+                { title: 'Rice (100 kg)', price: '₹3,200', priceLabel:'Market Price:', type:'Commodity', views:54, distance:'Nellore Mandi', location: 'Nellore, AP', img: 'https://im.myhal.in/commodites/Rice_9_11zon.jpg', link: 'agriculturecomodities.html' },
+                { title: 'Cotton (100 kg)', price: '₹6,800', priceLabel:'Market Price:', type:'Commodity', views:49, distance:'Rajkot Mandi', location: 'Rajkot, GJ', img: 'https://im.myhal.in/commodites/Cotton_2_11zon.jpg', link: 'agriculturecomodities.html' },
+                { title: 'Tea (1 kg)', price: '₹250', priceLabel:'Market Price:', type:'Commodity', views:57, distance:'Hooghly Market', location: 'Hooghly, WB', img: 'https://im.myhal.in/commodites/Tea_14_11zon.jpg', link: 'agriculturecomodities.html' },
+                { title: 'Coffee (1 kg)', price: '₹480', priceLabel:'Market Price:', type:'Commodity', views:45, distance:'Bengaluru Market', location: 'Bengaluru, KA', img: 'https://im.myhal.in/commodites/Coffee_1_11zon.jpg', link: 'agriculturecomodities.html' },
+                { title: 'Jaggery (100 kg)', price: '₹5000', priceLabel:'Market Price:', type:'Commodity', views:51, distance:'Dhampur', location: 'Dhampur, UP', img: 'https://im.myhal.in/commodites/Jaggery_5_11zon.jpg', link: 'agriculturecomodities.html' }
+            ]
+        };
+
+                        function cardHtml(item){
+                                const dist = distanceFromDelhiString(item.location) || item.distance || '';
+                                            return `
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                            <a href="${PLAY_URL}" target="_blank" rel="noopener noreferrer" class="listing-card d-block" aria-label="${item.title}">
+                                                <div class="listing-thumb">
+                                                        <img src="${item.img}" alt="${item.title}">
+                                                        <button class="listing-fav" type="button" aria-label="Save">
+                                                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.1 21.35l-1.1-.99C5.14 15.24 2 12.36 2 8.9 2 6.42 3.99 4.5 6.4 4.5c1.54 0 3.04.74 3.96 1.9A5.17 5.17 0 0 1 14.3 4.5c2.41 0 4.4 1.92 4.4 4.4 0 3.46-3.14 6.34-8.9 11.46l-1.7-1.61z"/></svg>
+                                                        </button>
+                                                </div>
+                                                <div class="listing-body">
+                                                        <div class="listing-views">${item.views ?? ''} ${item.views ? 'views' : ''}</div>
+                                                        <h4 class="listing-title">${item.title}</h4>
+                                                        <div class="listing-price-line"><span class="listing-price-label">${item.priceLabel || 'Price:'}</span> <span class="listing-price">${item.price}</span></div>
+                                                        <div class="listing-badges"><span class="badge-type">${item.type || ''}</span></div>
+                                                        <div class="listing-meta2">${item.location}${dist ? ' • ' + dist : ''}</div>
+                                                                    <div class="listing-actions"><span class="btn btn-sm btn-outline-success btn-more">${item.actionLabel || 'More'}</span></div>
+                                                </div>
+                                            </a>
+                                        </div>`;
+                        }
+
+                        let currentCategory = 'classified';
+                        let shownCount = 6;
+
+                        function renderListings(category){
+            const grid = document.getElementById('listingGrid');
+                                const data = LISTINGS[category] || [];
+                                grid.innerHTML = data.slice(0, shownCount).map(cardHtml).join('');
+
+            // Update View All link to Play Store
+            const viewAll = document.getElementById('viewAllLink');
+            viewAll.setAttribute('href', PLAY_URL);
+            viewAll.setAttribute('target', '_blank');
+            viewAll.setAttribute('rel', 'noopener noreferrer');
+
+                                // Load more visibility
+                                const loadBtn = document.getElementById('loadMoreBtn');
+                                loadBtn.style.display = (data.length > shownCount) ? 'inline-block' : 'none';
+        }
+
+        // Tab handlers
+        document.addEventListener('DOMContentLoaded', function(){
+            const tabs = document.querySelectorAll('#listingTabs .nav-link');
+            tabs.forEach(t => t.addEventListener('click', function(ev){
+                ev.preventDefault();
+                tabs.forEach(x => x.classList.remove('active'));
+                this.classList.add('active');
+                currentCategory = this.getAttribute('data-category');
+                shownCount = 6;
+                renderListings(currentCategory);
+            }));
+            currentCategory = 'classified';
+            renderListings(currentCategory);
+            // favorite toggle (UI only)
+            document.addEventListener('click', function(e){
+                if(e.target.closest('.listing-fav')){
+                    e.preventDefault();
+                    const btn = e.target.closest('.listing-fav');
+                    btn.classList.toggle('active');
+                }
+            });
+            document.getElementById('loadMoreBtn').addEventListener('click', function(){
+                shownCount += 6; renderListings(currentCategory);
+            });
+        });
+
+        // Rent section data (tractors available for rent)
+        const RENT_LISTINGS = [
+            { title:'Mahindra 575 DI (45 HP)', price:'₹800/hr', priceLabel:'Rent:', type:'Rent', views:58, location:'Gurgaon, HR', img:'https://im.myhal.in/website/mahindra.jpg', link:'Equipment.html', actionLabel:'Book Now' },
+            { title:'Swaraj 744 FE (48 HP)', price:'₹900/hr', priceLabel:'Rent:', type:'Rent', views:35, location:'Jaipur, RJ', img:'https://im.myhal.in/website/Swaraj.jpg', link:'Equipment.html', actionLabel:'Book Now' },
+            { title:'John Deere 5050 D (50 HP)', price:'₹1,000/hr', priceLabel:'Rent:', type:'Rent', views:41, location:'Karnal, HR', img:'https://im.myhal.in/website/JhonDere.jpg', link:'Equipment.html', actionLabel:'Book Now' },
+            { title:'New Holland 3630 (55 HP)', price:'₹1,100/hr', priceLabel:'Rent:', type:'Rent', views:29, location:'Agra, UP', img:'https://im.myhal.in/website/Newholland.jpg', link:'Equipment.html', actionLabel:'Book Now' }
+        ];
+        (function renderRent(){
+            const grid = document.getElementById('rentGrid'); if(!grid) return;
+            grid.innerHTML = RENT_LISTINGS.map(cardHtml).join('');
+        })();
         // Testimonial data
         const testimonials = [
-            // Hindi
-            {img:'images/user1.png', name:'सुरेश चौहान', role:'झांसी, उत्तर प्रदेश', quote:'“पहले हमें फसल बेचने के लिए बिचौलियों पर निर्भर रहना पड़ता था। कभी दाम कम मिलते थे, तो कभी भुगतान महीनों बाद आता था। MYHAL से जुड़ने के बाद मैंने अपनी फसल सीधे किसानों और खरीदारों को बेची। दाम अच्छा मिला, पैसा तुरंत खाते में आया और सबसे बड़ी बात — भरोसा बना। अब लगता है कि किसान भी डिजिटल दुनिया में आगे बढ़ सकते हैं।”'},
-            // Bengali
-            {img:'images/user2.png', name:'সুকুমার দত্ত', role:'নদীয়া, পশ্চিমবঙ্গ', quote:'“আগে আমি আমার ফসল বিক্রি করতে অনেক কষ্ট পেতাম। দালালরা দাম কমিয়ে দিত আর পেমেন্ট দিতে দেরি করত। MYHAL-এ আমার পণ্য আপলোড করার পর অনেক ক্রেতা আমার সঙ্গে যোগাযোগ করল। আমি আমার আমের ফসল খুব ভালো দামে বিক্রি করেছি। এখন আমি প্রতিবার ফসল তোলার পর MYHAL ব্যবহার করি — এটা আমার নিজের বাজার।”'},
-            // Kannada
-            {img:'images/user3.png', name:'ಬಸವರಾಜ ಪಾಟೀಲ', role:'ಬಿಜಾಪುರ, ಕರ್ನಾಟಕ', quote:'“ಹಿಂದೆ ನಾನು ಬೆಳೆ ಮಾರಾಟಕ್ಕೆ ವ್ಯಾಪಾರಿಗಳ ಮೇಲೆ ಅವಲಂಬಿತರಾಗಿದ್ದೆ. ಆದರೆ MYHAL ಮೂಲಕ ನಾನು ನನ್ನ ಈರುಳ್ಳಿ ನೇರವಾಗಿ ಖರೀದಿದಾರರಿಗೆ ಮಾರಾಟ ಮಾಡಿದೆ. ನನ್ನ ಬೆಳೆಗೆ ಉತ್ತಮ ಬೆಲೆ ಸಿಕ್ಕಿತು, ಪಾವತಿಗಳು ತಕ್ಷಣ ಬಂದವು. ಈಗ ನನ್ನ ಹಳ್ಳಿಯ ಇತರ ರೈತರೂ MYHAL ಬಳಕೆ ಮಾಡುತ್ತಿದ್ದಾರೆ, ಏಕೆಂದರೆ ಇದು ನಿಜವಾದ ರೈತರ ವೇದಿಕೆ.”'},
-            // Telugu
-            {img:'images/user1.png', name:'వెంకటేష్ రావు', role:'గుంటూరు, ఆంధ్రప్రదేశ్', quote:'“MYHAL వాడకానికి ముందు నేను మధ్యవర్తుల మీద ఆధారపడి ఉండేవాడిని. ఇప్పుడు నేను నా పంటను యాప్‌లో అప్‌లోడ్ చేస్తాను, కొనుగోలుదారులు నేరుగా సంప్రదిస్తారు. ఈ సారి నేను నా మిరప పంటను మంచి రేటుకి అమ్మగలిగాను. డబ్బు కూడా అదే రోజున బ్యాంక్‌లోకి వచ్చింది. ఇది నిజంగా రైతులకు ఉపయోగపడే యాప్.”'},
-            // Tamil
-            {img:'images/user2.png', name:'முருகேசன்', role:'சேலம், தமிழ்நாடு', quote:'“முந்தைய காலங்களில் நாங்கள் விளைபொருட்களை விற்க பல இடங்களுக்கும் போயிருக்க வேண்டும். ஆனால் MYHAL மூலம், நான் என் காய்கறிகளை நேரடியாக விற்றேன். சிறந்த விலை கிடைத்தது, உடனடி பணம் வந்தது. இது நம்மைப் போன்ற சிறு விவசாயிகளுக்குப் பெரிய ஆதரவாக இருக்கிறது. இதனால் நம்பிக்கை வந்தது — நாமும் தொழில்நுட்பத்துடன் முன்னேறலாம்.”'},
-            // Malayalam
-            {img:'images/user3.png', name:'ബിജു തോമസ്', role:'കോട്ടയം, കേരളം', quote:'“MYHAL ഉപയോഗിക്കുന്നതിനു മുമ്പ് ഞാന്‍ ഇടനിലക്കാരെ ആശ്രയിച്ചിരുന്നു. വിലയും വൈകിയും കിട്ടി. ഇപ്പോള്‍ വിളകള്‍ നേരിട്ട് ആപ്പില്‍ ഇടുമ്പോള്‍ നല്ല വിലയ്ക്ക് വാങ്ങുന്നവര്‍ നേരിട്ട് ബന്ധപ്പെടുന്നു. കഴിഞ്ഞ തവണ ഞാന്‍ പച്ചക്കറികള്‍ വില്‍ക്കുമ്പോള്‍ തന്നെ പണം അക്കൗണ്ടില്‍ ലഭിച്ചു. ഇത് ഞങ്ങളുപോലെ ചെറുകർഷകർക്ക് വലിയ ആശ്വാസമാണ്.”'},
-            // Gujarati
-            {img:'images/user1.png', name:'રમિલાબેન પટેલ', role:'આનંદ, ગુજરાત', quote:'“MYHAL સાથે જોડાયા પછી મારી દૂધની વસ્તુઓ સીધા ગ્રાહકો સુધી પહોંચે છે. પહેલાં મધ્યસ્થીઓને કમિશન આપવું પડતું, હવે નથી. ગ્રાહક સાથે સીધો સંપર્ક થાય છે, ભાવ સારો મળે છે અને ચુકવણી પણ તરત થાય છે. હવે હું રોજ નવા ગ્રાહકો સુધી MYHAL દ્વારા પહોંચી શકું છું.”'},
-            // Marathi
-            {img:'images/user2.png', name:'गणेश पाटील', role:'सांगली, महाराष्ट्र', quote:'“पूर्वी ऊस विकताना आम्हाला कारखानदार आणि दलाल यांच्यावर अवलंबून राहावे लागायचे. MYHAL वर लिस्टिंग केल्यानंतर थेट खरेदीदार माझ्याशी संपर्क साधतात. दर चांगला मिळतो आणि पेमेंट त्वरित होते. हे अॅप खरोखर शेतकऱ्यांच्या हातात शक्ती देतंय!”'},
-            // Punjabi
-            {img:'images/user3.png', name:'ਮਨਜੀਤ ਸਿੰਘ', role:'ਲੁਧਿਆਣਾ, ਪੰਜਾਬ', quote:'“ਪਹਿਲਾਂ ਸਾਡੇ ਪਿੰਡ ਦੇ ਸਾਰੇ ਕਿਸਾਨ ਫਸਲ ਵੇਚਣ ਲਈ ਦਲਾਲਾਂ ਉੱਤੇ ਨਿਰਭਰ ਸਨ। MYHAL ਨਾਲ ਮੈਂ ਆਪਣੀ ਫਸਲ ਸਿੱਧੇ ਖਰੀਦਦਾਰਾਂ ਤੱਕ ਵੇਚੀ। ਹੁਣ ਸਾਡੀ ਕਮਾਈ ਵਧ ਗਈ ਹੈ, ਪੈਸਾ ਵੀ ਸਮੇਂ ਤੇ ਮਿਲਦਾ ਹੈ। ਇਹ ਪਲੇਟਫਾਰਮ ਸਾਡੇ ਲਈ ਇਕ ਨਵਾਂ ਆਸਰਾ ਹੈ।”'},
-            // Odia
-            {img:'images/user1.png', name:'ବିଜୟ ବେହେରା', role:'କଟକ, ଓଡ଼ିଶା', quote:'“MYHAL ଆସିବା ପୂର୍ବରୁ ମୋତେ ମାଛ ଓ ସବ୍ଜି ବିକ୍ରି କରିବା ପାଇଁ ଦାଲାଲଙ୍କ ଉପରେ ଭରସା କରିବାକୁ ପଡ଼ୁଥିଲା। ବର୍ତ୍ତମାନ ଆପ୍‌ରେ ନିଜେ ତାଲିକା କରି ପାରୁଛି ଏବଂ ସିଧା ଗ୍ରାହକ ସହିତ ସମ୍ପର୍କ ହେଉଛି। ମୋ ଆୟ ବଢ଼ିଲା ଏବଂ ନିଜ ହାତରେ ନିଜ ମାର୍କେଟ ଆସିଲା।”'},
-            // Assamese
-            {img:'images/user2.png', name:'অনিল বৰা', role:'নগাঁও, অসম', quote:'“আগতে ধান বিক্ৰী কৰিবলৈ বহুত কষ্ট হৈছিল। দালালসকল সময় ল’ব, দাম কম দিব। কিন্তু MYHALত আমি ফসলৰ ফটো উঠালেই খৰিদাৰ নিজে যোগাযোগ কৰে। বৰ্ষৰ ভিতৰত মই দুবাৰ ধান বিক্ৰী কৰিছো — দুয়োখনত ভাল মূল্য পাইছো।”'},
-            // Urdu
-            {img:'images/user3.png', name:'غلام نبی', role:'بریلی، اتر پردیش', quote:'“پہلے میری سبزیاں گاؤں کے دلالوں کے ذریعے ہی بکتی تھیں۔ نہ قیمت اچھی ملتی تھی نہ وقت پر پیسے۔ MYHAL نے میری زندگی بدل دی۔ اب میں خود خریداروں سے رابطہ کرتا ہوں، بہتر دام پاتا ہوں اور پیسے فوراً اکاؤنٹ میں آجاتے ہیں۔ یہ واقعی کسانوں کے لیے نعمت ہے۔”'},
-            // Hindi (Ramesh Yadav)
-            {img:'images/user1.png', name:'Ramesh Yadav', role:'Varanasi, Uttar Pradesh', quote:'“Before joining MYHAL, I used to depend on middlemen who paid low and delayed payments. Through MYHAL, I listed my crops directly and connected with genuine buyers. I sold my wheat within days at a much better rate and received the money instantly in my bank account. For the first time, I felt that technology is truly helping farmers like me.”'},
-            // Sinhala
-            {img:'images/user2.png', name:'නිහාල් පෙරේරා', role:'කෑගල්ල, ශ්‍රී ලංකාව', quote:'“MYHAL භාවිතා කිරීමට පෙර මට බෝග විකිණීමට මැදිහත්කරුවන්ට විශ්වාස කළ යුතු වුණා. දැන් මට නව ක්ෂේත්‍රයක් විවෘත වුණා — මගේ බෝග සෘජුවම මිලදී ගන්නා අය වෙත විකිණීමට හැකි වුණා. අලුත් පාරිභෝගිකයන් හා සබඳතා ඇතිවුණා, ලාභයද වැඩිවුණා. මේ ඇප් එක ගොවියන්ට අලුත් ආරම්භයක්!”'}
+            {img:'images/user1.png', name:'Suresh Chauhan', role:'Jhansi, Uttar Pradesh', quote:'"Got a better price and instant payment through MYHAL. Simple, safe, and local."'},
+            {img:'images/user2.png', name:'Anita Verma', role:'Nadia, West Bengal', quote:'"Sold my mango produce quickly. The app connects me directly with buyers."'},
+            {img:'images/user3.png', name:'Basavaraj Patil', role:'Bijapur, Karnataka', quote:'"I can list in minutes and talk to genuine buyers. Very useful for farmers."'},
+            {img:'images/user4.png', name:'Venkatesh Rao', role:'Guntur, Andhra Pradesh', quote:'"Closed deals faster and got paid on time. Exactly what I needed."'},
+            {img:'images/user5.png', name:'Murugesan', role:'Salem, Tamil Nadu', quote:'"I sell vegetables directly without middlemen. Better rates, smooth process."'},
+            {img:'images/user6.png', name:'Biju Thomas', role:'Kottayam, Kerala', quote:'"Posting ads is easy and buyers contact me quickly. Highly recommended."'},
+            {img:'images/user7.png', name:'Ramilaben Patel', role:'Anand, Gujarat', quote:'"Dairy products reach customers directly with fair prices and quick payments."'},
+            {img:'images/user8.png', name:'Ganesh Patil', role:'Sangli, Maharashtra', quote:'"Farm tools and crops sold at fair prices. The app is simple and reliable."'}  
         ];
         
-        const itemsPerPage = 5;
+        let itemsPerPage = 4;
         let currentPage = 0;
-        const totalPages = Math.ceil(testimonials.length / itemsPerPage);
+        let totalPages = Math.ceil(testimonials.length / itemsPerPage);
+        
+        function calculateItemsPerPage() {
+            const width = window.innerWidth;
+            if (width >= 1200) return 4;      // Large screens: 4 items (col-lg-3)
+            else if (width >= 768) return 2;  // Medium screens: 2 items (col-md-6)
+            else return 1;                    // Small screens: 1 item (col-sm-12)
+        }
         
         function renderTestimonials(page) {
+            itemsPerPage = calculateItemsPerPage();
+            totalPages = Math.ceil(testimonials.length / itemsPerPage);
+            
+            // Adjust current page if it's out of bounds
+            if (currentPage >= totalPages) {
+                currentPage = totalPages - 1;
+            }
+            
             const container = document.getElementById('testimonial-cards-container');
             container.innerHTML = '';
             
@@ -499,14 +670,17 @@
             for (let i = start; i < end; i++) {
                 const t = testimonials[i];
                 const col = document.createElement('div');
-                col.className = 'col-lg-2 col-md-4 col-sm-6 mb-3';
+                col.className = 'col-lg-3 col-md-6 col-sm-12 mb-4';
                 col.innerHTML = `
-                    <div class="testimonial-card-grid shadow-sm rounded-lg p-2 h-100 position-relative" style="background:#fff; border-radius:12px; border:1px solid #eee; min-width:160px; margin:8px; display:flex; flex-direction:column; align-items:center; transition:transform 0.3s;">
-                        <div style="height:4px; background:#4bc714; border-radius:12px 12px 0 0; position:absolute; top:0; left:0; right:0;"></div>
-                        <img src='${t.img}' alt='${t.name}' style="width:48px; height:48px; border-radius:50%; box-shadow:0 2px 8px rgba(76,199,20,0.13); border:3px solid #fff; margin-top:1.2rem; margin-bottom:0.6rem;" />
-                        <div style="font-weight:700; font-size:0.95rem; color:#052501; text-align:center;">${t.name}</div>
-                        <div style="color:#4bc714; font-size:0.85rem; font-weight:600; text-align:center; margin-bottom:0.6rem;">${t.role}</div>
-                        <div class="testimonial-quote-grid mb-2" style="font-size:0.85rem; color:#222; font-style:italic; text-align:center; background:#eafbe7; border-radius:10px; padding:0.8rem 0.6rem; margin-top:0.2rem; line-height:1.4;">${t.quote}</div>
+                    <div class="testimonial-card-modern shadow-sm h-100" style="background:#fff; border-radius:16px; border-top:4px solid #4bc714; padding:2rem 1.5rem; display:flex; flex-direction:column; transition:all 0.3s ease; min-height:280px;">
+                        <div style="font-size:0.95rem; color:#666; font-style:italic; text-align:left; line-height:1.6; margin-bottom:1.5rem; flex-grow:1;">${t.quote}</div>
+                        <div style="display:flex; align-items:center; gap:1rem;">
+                            <img src='${t.img}' alt='${t.name}' style="width:60px; height:60px; border-radius:50%; object-fit:cover; border:3px solid #4bc714; flex-shrink:0;" />
+                            <div style="text-align:left;">
+                                <div style="font-weight:700; font-size:1rem; color:#052501; margin-bottom:0.2rem;">${t.name}</div>
+                                <div style="color:#999; font-size:0.85rem;">${t.role}</div>
+                            </div>
+                        </div>
                     </div>
                 `;
                 container.appendChild(col);
@@ -544,6 +718,47 @@
         
         // Initial render
         renderTestimonials(0);
+        
+        // Handle window resize
+        let resizeTimer;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+                renderTestimonials(currentPage);
+            }, 250);
+        });
+        
+        // Animated Counter for Stats
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const suffix = element.getAttribute('data-suffix') || '';
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target.toLocaleString() + suffix;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(start).toLocaleString() + suffix;
+                }
+            }, 16);
+        }
+        
+        // Intersection Observer for stats animation
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                    entry.target.classList.add('counted');
+                    const target = parseInt(entry.target.getAttribute('data-target'));
+                    animateCounter(entry.target, target);
+                }
+            });
+        }, { threshold: 0.3 });
+        
+        // Observe all stat numbers
+        document.querySelectorAll('.stat-number').forEach(stat => {
+            statsObserver.observe(stat);
+        });
         </script>
   
     <!-- end clients -->
@@ -592,9 +807,27 @@
                                     <a href="#"><img src="icon/email.png" alt="#" /></a>hello@myhal.in </li>
                                 <li>
                                     <a href="#"><img src="icon/call.png" alt="#" /></a>+918376883780 </li>
+                                        <li class="social">
+                                            <div class="footer-social">
+                                                <a href="https://instagram.com/myhalindia" target="_blank" rel="noopener noreferrer" aria-label="Instagram - @myhalindia"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                                <a href="https://www.youtube.com/@myhalindia" target="_blank" rel="noopener noreferrer" aria-label="YouTube - @myhalindia"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                                <a href="https://facebook.com/myhalindia" target="_blank" rel="noopener noreferrer" aria-label="Facebook - @myhalindia"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                <span class="handle">@myhalindia</span>
+                                            </div>
+                                        </li>
                             </ul>
                         </div>
                     </div>
+                            <!-- App Download column -->
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                                <div class="address app-download">
+                                    <h3>Get the App</h3>
+                                    <p class="small" style="color:#dfe9e2; margin-bottom:10px;">Join 5,000+ downloads • 13+ languages</p>
+                                    <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.myhal.myhal" target="_blank" rel="noopener noreferrer" aria-label="Download MYHAL on Google Play" title="Download MYHAL on Google Play">
+                                        <img class="play-badge" src="images/gplay.png" alt="Get it on Google Play" />
+                                    </a>
+                                </div>
+                            </div>
                 </div>
             </div>
         </div>
@@ -612,7 +845,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -636,32 +868,7 @@
             });
         });
     </script>
-    <script>
-        // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-        // Australia.
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 11,
-                center: {
-                    lat: 40.645037,
-                    lng: -73.880224
-                },
-            });
-
-            var image = 'images/maps-and-flags.png';
-            var beachMarker = new google.maps.Marker({
-                position: {
-                    lat: 40.645037,
-                    lng: -73.880224
-                },
-                map: map,
-                icon: image
-            });
-        }
-    </script>
-    <!-- google map js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
-    <!-- end google map js -->
+    <!-- Google Maps removed: not used on this page to improve load performance -->
         <!-- Google Translate widget -->
         <script>
             function googleTranslateElementInit() {
