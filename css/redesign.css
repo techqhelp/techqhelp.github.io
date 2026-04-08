@@ -732,8 +732,9 @@ body.lang-banner-visible { padding-top: 48px; }
 
 /* Footer social icons */
 .footer .footer-social{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:8px}
-.footer .footer-social a{color:#fff;background:rgba(255,255,255,.08);width:40px;height:40px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.15);transition:all .2s ease;line-height:1;text-align:center;box-sizing:border-box}
+.footer .footer-social a{color:#fff;background:rgba(255,255,255,.08);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.15);transition:all .2s ease;line-height:1;text-align:center;box-sizing:border-box;padding:0}
 .footer .footer-social a i{display:block;line-height:1;font-size:19px;font-weight:normal}
+.footer .footer-social a svg{display:block;flex-shrink:0}
 .footer .footer-social a:hover{color:#4bc714;background:rgba(255,255,255,.12)}
 .footer .footer-social .handle{color:#dfe9e2;font-weight:700;margin-left:4px}
 

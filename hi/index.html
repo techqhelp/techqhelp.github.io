@@ -10,8 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- site metas -->
     <title>MYHAL — भारत का #1 कृषि मार्केटप्लेस</title>
-    <meta name="keywords" content="कृषि, ट्रैक्टर, लैंडस्केपिंग, सजावटी पौधे, कृषि वस्तुएँ, खाद, उर्वरक, पोषक तत्व, खेती, मार्केटप्लेस, क्लासिफ़ाइड, किसान">
+    <meta name="keywords" content="कृषि, ट्रैक्टर, लैंडस्केपिंग, सजावटी पौधे, कृषि वस्तुएँ, खाद, उर्वरक, पोषक तत्व, खेती, मार्केटप्लेस, क्लासिफ़ाइड, किसान, कृषि उत्पाद खरीदें बेचें, ट्रैक्टर किराये पर, कृषि ऐप, किसान बाजार, खेती उपकरण, बीज ऑनलाइन, पशुधन, जैविक खाद, वर्मी कम्पोस्ट, कृषि मशीनरी">
     <meta name="description" content="MYHAL भारत का प्रमुख कृषि मार्केटप्लेस है — फसलें, उपकरण और सेवाएं खरीदें, बेचें और किराये पर लें। निःशुल्क विज्ञापन पोस्ट करें और सीधे खरीदारों से जुड़ें।">
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="New Delhi">
+    <meta name="rating" content="general">
     <meta name="author" content="MyHAL">
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="MYHAL — भारत का #1 कृषि मार्केटप्लेस">
@@ -56,7 +59,98 @@
             "@context":"https://schema.org",
             "@type":"WebSite",
             "name":"MyHAL",
-            "url":"https://www.myhal.in/hi/"
+            "url":"https://www.myhal.in/hi/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://www.myhal.in/hi/?q={search_term_string}",
+                "query-input":"required name=search_term_string"
+            }
+        }
+        </script>
+        <!-- MobileApplication structured data -->
+        <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"MobileApplication",
+            "name":"MYHAL - कृषि मार्केटप्लेस",
+            "operatingSystem":"Android",
+            "applicationCategory":"BusinessApplication",
+            "aggregateRating":{
+                "@type":"AggregateRating",
+                "ratingValue":"4.8",
+                "ratingCount":"120",
+                "bestRating":"5"
+            },
+            "offers":{
+                "@type":"Offer",
+                "price":"0",
+                "priceCurrency":"INR"
+            },
+            "installUrl":"https://play.google.com/store/apps/details?id=com.myhal.myhal",
+            "screenshot":"https://www.myhal.in/images/mockup.png",
+            "description":"भारत का #1 कृषि मार्केटप्लेस — फसलें, उपकरण, बीज, उर्वरक और पशुधन खरीदें, बेचें और किराये पर लें। निःशुल्क विज्ञापन पोस्ट करें।"
+        }
+        </script>
+        <!-- FAQPage structured data -->
+        <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"FAQPage",
+            "mainEntity":[
+                {
+                    "@type":"Question",
+                    "name":"MYHAL क्या है?",
+                    "acceptedAnswer":{
+                        "@type":"Answer",
+                        "text":"MYHAL भारत का भरोसेमंद कृषि क्लासिफ़ाइड और रेंटल मार्केटप्लेस है जहाँ आप फसलें, मशीनरी, बीज और पशुधन खरीद/बेच/किराये पर ले सकते हैं।"
+                    }
+                },
+                {
+                    "@type":"Question",
+                    "name":"क्या MYHAL पर विज्ञापन पोस्ट करना मुफ्त है?",
+                    "acceptedAnswer":{
+                        "@type":"Answer",
+                        "text":"हाँ, MYHAL पर विज्ञापन पोस्ट करना पूरी तरह मुफ्त है। किसान अपने उत्पादों की लिस्टिंग कर सकते हैं, फोटो अपलोड कर सकते हैं और बिना किसी शुल्क के खरीदारों से जुड़ सकते हैं।"
+                    }
+                },
+                {
+                    "@type":"Question",
+                    "name":"MYHAL कितनी भाषाओं में उपलब्ध है?",
+                    "acceptedAnswer":{
+                        "@type":"Answer",
+                        "text":"MYHAL 13+ भारतीय भाषाओं में उपलब्ध है जिसमें हिंदी, तमिल, तेलुगु, मलयालम, गुजराती, बंगाली, पंजाबी और ओड़िया शामिल हैं।"
+                    }
+                },
+                {
+                    "@type":"Question",
+                    "name":"क्या MYHAL पर कृषि उपकरण किराये पर ले सकते हैं?",
+                    "acceptedAnswer":{
+                        "@type":"Answer",
+                        "text":"हाँ, आप MYHAL ऐप के माध्यम से नज़दीकी मालिकों से ट्रैक्टर, हार्वेस्टर, रोटावेटर और अन्य कृषि उपकरण किराये पर ले सकते हैं।"
+                    }
+                }
+            ]
+        }
+        </script>
+        <!-- LocalBusiness structured data -->
+        <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"LocalBusiness",
+            "name":"MyHAL",
+            "image":"https://www.myhal.in/images/MyHAL.png",
+            "url":"https://www.myhal.in",
+            "telephone":"+918376883780",
+            "email":"hello@myhal.in",
+            "address":{
+                "@type":"PostalAddress",
+                "streetAddress":"Nanak Pura, Hari Nagar",
+                "addressLocality":"New Delhi",
+                "addressRegion":"Delhi",
+                "postalCode":"110064",
+                "addressCountry":"IN"
+            },
+            "priceRange":"Free"
         }
         </script>
     <!-- bootstrap css -->
@@ -95,7 +189,7 @@
                 <a class="navbar-brand" href="index.html">
                     <img src="../images/MyHAL.png" alt="MyHAL">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -378,7 +472,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="title">
-                            <h2>हम क्या <b color="#4bc714">प्रदान</b> करते हैं</h2>
+                            <h2>हम क्या <b style="color:#4bc714">प्रदान</b> करते हैं</h2>
                         </div>
                     </div>
                 </div>
@@ -511,7 +605,7 @@
                 { title: 'चावल (100 kg)', price: '₹3,200', priceLabel:'बाजार मूल्य:', type:'Commodity', views:54, distance:'Nellore Mandi', location: 'Nellore, AP', img: 'https://im.myhal.in/commodites/Rice_9_11zon.jpg', link: '../agriculturecomodities.html' },
                 { title: 'कपास (100 kg)', price: '₹6,800', priceLabel:'बाजार मूल्य:', type:'Commodity', views:49, distance:'Rajkot Mandi', location: 'Rajkot, GJ', img: 'https://im.myhal.in/commodites/Cotton_2_11zon.jpg', link: '../agriculturecomodities.html' },
                 { title: 'चाय (1 kg)', price: '₹250', priceLabel:'बाजार मूल्य:', type:'Commodity', views:57, distance:'Hooghly Market', location: 'Hooghly, WB', img: 'https://im.myhal.in/commodites/Tea_14_11zon.jpg', link: '../agriculturecomodities.html' },
-                { title: 'कॉफी (1 km)', price: '₹480', priceLabel:'बाजार मूल्य:', type:'Commodity', views:45, distance:'Bengaluru Market', location: 'Bengaluru, KA', img: 'https://im.myhal.in/commodites/Coffee_1_11zon.jpg', link: '../agriculturecomodities.html' },
+                { title: 'कॉफी (1 kg)', price: '₹480', priceLabel:'बाजार मूल्य:', type:'Commodity', views:45, distance:'Bengaluru Market', location: 'Bengaluru, KA', img: 'https://im.myhal.in/commodites/Coffee_1_11zon.jpg', link: '../agriculturecomodities.html' },
                 { title: 'गुड़ (100 kg)', price: '₹5000', priceLabel:'बाजार मूल्य:', type:'Commodity', views:51, distance:'Dhampur', location: 'Dhampur, UP', img: 'https://im.myhal.in/commodites/Jaggery_5_11zon.jpg', link: '../agriculturecomodities.html' }
             ]
         };
@@ -732,7 +826,7 @@
 
     <!-- footer -->
     <!--  footer -->
-    <footr>
+    <footer>
         <div class="footer top_layer ">
             <div class="container">
 
@@ -747,11 +841,11 @@
                         <div class="address">
                             <h3>त्वरित लिंक</h3>
                                 <ul class="Links_footer">
-                                <li><img src="../icon/3.png" alt="#" /> <a href="../index.html">होम</a> </li>
-                                <li><img src="../icon/3.png" alt="#" /> <a href="#footer-contact">संपर्क करें</a> </li>
-                                <li><img src="../icon/3.png" alt="#" /> <a href="../index.html#testimonial">प्रशंसापत्र</a> </li>
-                                <li><img src="../icon/3.png" alt="#" /> <a href="../index.html#about">हमारे बारे में</a> </li>
-                                <li><img src="../icon/3.png" alt="#" /> <a href="../privacypolicy.html">गोपनीयता नीति</a> </li>
+                                <li><img src="../icon/3.png" alt="" aria-hidden="true" /> <a href="../index.html">होम</a> </li>
+                                <li><img src="../icon/3.png" alt="" aria-hidden="true" /> <a href="#footer-contact">संपर्क करें</a> </li>
+                                <li><img src="../icon/3.png" alt="" aria-hidden="true" /> <a href="../index.html#testimonial">प्रशंसापत्र</a> </li>
+                                <li><img src="../icon/3.png" alt="" aria-hidden="true" /> <a href="../index.html#about">हमारे बारे में</a> </li>
+                                <li><img src="../icon/3.png" alt="" aria-hidden="true" /> <a href="../privacypolicy.html">गोपनीयता नीति</a> </li>
                             </ul>
                         </div>
                     </div>
@@ -763,20 +857,26 @@
 
                             <ul class="loca">
                                 <li>
-                                    <a href="#" style="display:inline-flex; align-items:center; gap:12px;">
-                                        <img src="../icon/loc.png" alt="#" style="width:32px; height:32px;" />
+                                    <span style="display:inline-flex; align-items:center; gap:12px;">
+                                        <img src="../icon/loc.png" alt="Location" style="width:32px; height:32px;" />
                                         <span>Nanak Pura, Hari Nagar (west Delhi), West Delhi, New Delhi, Delhi, India, 110064</span>
-                                    </a>
+                                    </span>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="../icon/email.png" alt="#" /></a>hello@myhal.in </li>
+                                    <a href="mailto:hello@myhal.in"><img src="../icon/email.png" alt="Email" /></a>hello@myhal.in </li>
                                 <li>
-                                    <a href="#"><img src="../icon/call.png" alt="#" /></a>+918376883780 </li>
+                                    <a href="tel:+918376883780"><img src="../icon/call.png" alt="Phone" /></a>+918376883780 </li>
                                         <li class="social">
                                             <div class="footer-social">
-                                                <a href="https://instagram.com/myhalindia" target="_blank" rel="noopener noreferrer" aria-label="Instagram - @myhalindia"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                                <a href="https://www.youtube.com/@myhalindia" target="_blank" rel="noopener noreferrer" aria-label="YouTube - @myhalindia"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                                                <a href="https://facebook.com/myhalindia" target="_blank" rel="noopener noreferrer" aria-label="Facebook - @myhalindia"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                <a href="https://instagram.com/myhalindia" target="_blank" rel="noopener noreferrer" aria-label="Instagram - @myhalindia" style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);border:none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                                                </a>
+                                                <a href="https://www.youtube.com/@myhalindia" target="_blank" rel="noopener noreferrer" aria-label="YouTube - @myhalindia" style="background:#FF0000;border:none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+                                                </a>
+                                                <a href="https://facebook.com/myhalindia" target="_blank" rel="noopener noreferrer" aria-label="Facebook - @myhalindia" style="background:#1877F2;border:none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07c0 6.02 4.39 11.02 10.13 11.93v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.33l-.53 3.49h-2.8v8.44C19.61 23.09 24 18.09 24 12.07z"/></svg>
+                                                </a>
                                                 <span class="handle">@myhalindia</span>
                                             </div>
                                         </li>
@@ -803,7 +903,7 @@
            
         </div>
         </div>
-    </footr>
+    </footer>
 
     <!-- end footer -->
     <!-- Javascript files--> 
@@ -816,7 +916,7 @@
     <script src="../js/custom.js"></script>
     <!-- javascript -->
     <script src="../js/owl.carousel.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script>
         $(document).ready(function() {
             $(".fancybox").fancybox({

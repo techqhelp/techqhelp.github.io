@@ -1,10 +1,16 @@
 {
-  "name": "MYHAL",
+  "name": "MYHAL - India's #1 Agriculture Marketplace",
   "short_name": "MYHAL",
+  "description": "Buy, sell and rent farm products, equipment, seeds, fertilizers and livestock. Post free ads and connect directly with buyers. India's trusted agriculture marketplace.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#052501",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": ["business", "shopping", "lifestyle"],
+  "prefer_related_applications": true,
   "related_applications": [
     {
       "platform": "play",
@@ -13,6 +19,17 @@
     }
   ],
   "icons": [
+    {
+      "src": "images/logo/1.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "images/MyHAL.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
     {
       "src": "images/gplay.png",
       "sizes": "512x512",
