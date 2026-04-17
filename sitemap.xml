@@ -40,4 +40,80 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- Blog Index (English) -->
+  <url>
+    <loc>https://www.myhal.in/blog/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.myhal.in/blog/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.myhal.in/hi/blog/" />
+  </url>
+
+  <!-- Blog Index (Hindi) -->
+  <url>
+    <loc>https://www.myhal.in/hi/blog/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.myhal.in/blog/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.myhal.in/hi/blog/" />
+  </url>
+
+  <!-- Blog: How to Sell Agricultural Products (English) -->
+  <url>
+    <loc>https://www.myhal.in/blog/how-to-sell-agricultural-products-in-india.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.myhal.in/blog/how-to-sell-agricultural-products-in-india.html" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.myhal.in/hi/blog/kisan-agricultural-products-kaise-beche.html" />
+  </url>
+
+  <!-- Blog: कृषि उत्पाद कैसे बेचें (Hindi) -->
+  <url>
+    <loc>https://www.myhal.in/hi/blog/kisan-agricultural-products-kaise-beche.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.myhal.in/blog/how-to-sell-agricultural-products-in-india.html" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.myhal.in/hi/blog/kisan-agricultural-products-kaise-beche.html" />
+  </url>
+
+  <!-- Blog: How to Rent Farm Equipment in India -->
+  <url>
+    <loc>https://www.myhal.in/blog/how-to-rent-farm-equipment-in-india.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog: How to Buy Agricultural Products Online India -->
+  <url>
+    <loc>https://www.myhal.in/blog/how-to-buy-agricultural-products-online-india.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog: ट्रैक्टर और कृषि उपकरण किराये पर कैसे लें (Hindi) -->
+  <url>
+    <loc>https://www.myhal.in/hi/blog/kisan-tractor-kiraye-par-kaise-le.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.myhal.in/blog/how-to-rent-farm-equipment-in-india.html" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.myhal.in/hi/blog/kisan-tractor-kiraye-par-kaise-le.html" />
+  </url>
+
+  <!-- Blog: कृषि उत्पाद ऑनलाइन कैसे खरीदें (Hindi) -->
+  <url>
+    <loc>https://www.myhal.in/hi/blog/kisan-krishi-utpad-online-kaise-khareede.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.myhal.in/blog/how-to-buy-agricultural-products-online-india.html" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.myhal.in/hi/blog/kisan-krishi-utpad-online-kaise-khareede.html" />
+  </url>
+
 </urlset>
