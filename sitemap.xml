@@ -24,6 +24,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.myhal.in/" />
   </url>
 
+  <!-- Careers -->
+  <url>
+    <loc>https://www.myhal.in/careers.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Privacy Policy -->
   <url>
     <loc>https://www.myhal.in/privacypolicy.html</loc>
