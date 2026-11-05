@@ -40,6 +40,14 @@
     <priority>0.4</priority>
   </url>
 
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://www.myhal.in/terms.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
   <!-- Account Deletion -->
   <url>
     <loc>https://www.myhal.in/MyhalDeletion.html</loc>
