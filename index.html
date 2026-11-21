@@ -354,6 +354,7 @@
                         <li class="nav-item"><a class="nav-link" href="#tools">Farm tools</a></li>
                         <li class="nav-item"><a class="nav-link" href="#product">Marketplace</a></li>
                         <li class="nav-item"><a class="nav-link" href="#certification">Certified</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog/index.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
                         <li class="nav-item"><a class="nav-link" href="#footer-contact">Contact</a></li>
@@ -476,6 +477,17 @@
             <div class="container">
                 <div class="section-intro section-intro-light"><p class="eyebrow">What we offer</p><h2>Explore our main categories.</h2><p>Find trusted listings for tractors, livestock, farm equipment and agricultural commodities.</p></div>
                 <div class="market-grid"><a href="https://play.google.com/store/apps/details?id=com.myhal.myhal" class="market-item" target="_blank" rel="noopener noreferrer"><span>01</span><strong>Tractors</strong><small>Buy, sell or rent tractors from nearby owners</small></a><a href="https://play.google.com/store/apps/details?id=com.myhal.myhal" class="market-item" target="_blank" rel="noopener noreferrer"><span>02</span><strong>Livestock</strong><small>Find and list cattle, goats, sheep and poultry</small></a><a href="https://play.google.com/store/apps/details?id=com.myhal.myhal" class="market-item" target="_blank" rel="noopener noreferrer"><span>03</span><strong>Farm Equipment</strong><small>Discover machinery, tools and implements</small></a><a href="https://play.google.com/store/apps/details?id=com.myhal.myhal" class="market-item" target="_blank" rel="noopener noreferrer"><span>04</span><strong>Commodities</strong><small>Trade crops, seeds, fertilisers and produce</small></a></div>
+            </div>
+        </section>
+
+        <section class="tools-section" id="about-us">
+            <div class="container">
+                <div class="section-intro"><p class="eyebrow">About Us</p><h2>India's farmer-to-farmer marketplace, built to help farmers trade with confidence.</h2><p>MyHAL is a farmer-first app where farmers buy, sell and rent tractors, farm equipment, livestock and crops directly with each other, with less dependence on middlemen. MyHAL is owned by V&amp;Y Roots Private Limited.</p></div>
+                <div class="row">
+                    <div class="col-md-4 mb-3"><div class="tool-card"><h3>Our mission</h3><p>To make agricultural trade transparent, local and fair, so every farmer can find a good deal close to home.</p></div></div>
+                    <div class="col-md-4 mb-3"><div class="tool-card"><h3>What we offer</h3><p>A marketplace for tractors, machines, livestock and commodities, rentals, barter exchange, and MyHAL Certified equipment inspected by our team.</p></div></div>
+                    <div class="col-md-4 mb-3"><div class="tool-card"><h3>Built for farmers</h3><p>Fasal Didi for crop advice and Kheti Ka Hisab for expense tracking, available in 13+ Indian languages. Reach us at <a href="mailto:hello@myhal.in">hello@myhal.in</a>.</p></div></div>
+                </div>
             </div>
         </section>
 
@@ -1424,7 +1436,7 @@
                                 <li><img src="icon/3.png" alt="" aria-hidden="true" /> <a href="careers.html">Careers</a> </li>
                                 <li><img src="icon/3.png" alt="" aria-hidden="true" /> <a href="#footer-contact">Contact Us</a> </li>
                                 <li><img src="icon/3.png" alt="" aria-hidden="true" /> <a href="index.html#testimonial">Testimonial</a> </li>
-                                <li><img src="icon/3.png" alt="" aria-hidden="true" /> <a href="index.html#about">About US</a> </li>
+                                <li><img src="icon/3.png" alt="" aria-hidden="true" /> <a href="index.html#about-us">About US</a> </li>
                                 <li><img src="icon/3.png" alt="" aria-hidden="true" /> <a href="privacypolicy.html">Privacy Policy</a> </li>
                                 <li><img src="icon/3.png" alt="" aria-hidden="true" /> <a href="terms.html">Terms of Service</a> </li>
                             </ul>
@@ -1481,7 +1493,7 @@
      
         <div class="copyright">
             <div class="container">
-                <p>© 2025 All Rights Reserved. Design By MyHAL</p>
+                <p>© 2025 V&Y Roots Private Limited. All Rights Reserved. MyHAL is owned by V&Y Roots Private Limited.</p>
            
         </div>
         </div>
@@ -1489,6 +1501,18 @@
 
     <!-- end footer -->
     <!-- Javascript files-->
+    <script>
+        // Contact links: page height changes while images load, so re-scroll once to land exactly on the contact block.
+        document.querySelectorAll('a[href="#footer-contact"]').forEach(function (a) {
+            a.addEventListener('click', function (e) {
+                var t = document.getElementById('footer-contact');
+                if (!t) return;
+                e.preventDefault();
+                t.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setTimeout(function () { t.scrollIntoView({ block: 'center' }); }, 900);
+            });
+        });
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
